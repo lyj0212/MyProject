@@ -1,0 +1,5 @@
+<ul>
+  &lt;!--{@ LOOP}--&gt;
+  <li><a href="{.LINK}" class="active" target="{.WIN_TARGET}">{.TITLE}</a></li>
+  &lt;!--{/}--&gt; 
+</ul>

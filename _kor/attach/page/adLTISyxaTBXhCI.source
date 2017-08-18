@@ -1,0 +1,57 @@
+<div class="facilities_wrap">
+     <div class="facilities_frontview">
+      <div class="title"><span>대덕SW융합 클러스터 전경</span></div>
+     </div>
+     <div class="facilities">
+      <ul>
+      <li>
+       <div class="facilities_capt">
+        <figure class="img"><img src="/images/contents/sub03/facilities_01_1.jpg" alt="비즈스퀘어 모습" /></figure>
+        <figcaption class="caption">
+         <strong>비즈스퀘어</strong>
+         <ul class="li_th2">
+         <li>예비창업자, 지원기업, 일반인 등 기타센터 이용자의 아이디어 공유 및 비즈니스 활성화를 도모하는 네트워킹 공간</li>
+         <li>회의 및 프레젠테이션이 가능하며, 소규모 행사 진행도 가능한 멀티 오픈 공간</li>
+         </ul>
+        </figcaption>
+       </div>
+      </li>
+      <li class="even">
+       <div class="facilities_capt">
+        <figure class="img"><img src="/images/contents/sub03/facilities_01_2.jpg" alt="비즈스퀘어 모습" /></figure>
+        <figcaption class="caption">
+         <strong>상상마루</strong>
+         <ul class="li_th2">
+         <li>예비창업자, 지원기업, 일반인 등 기타센터 이용자의 아이디어 공유 및 비즈니스 활성화를 도모하는 네트워킹 공간</li>
+         <li>회의 및 프레젠테이션이 가능하며, 소규모 행사 진행도 가능한 멀티 오픈 공간</li>
+         </ul>
+        </figcaption>
+       </div>
+      </li>
+      <li>
+       <div class="facilities_capt">
+        <figure class="img"><img src="/images/contents/sub03/facilities_01_3.jpg" alt="비즈스퀘어 모습" /></figure>
+        <figcaption class="caption">
+         <strong>D-cube room</strong>
+         <ul class="li_th2">
+         <li>예비창업자, 지원기업, 일반인 등 기타센터 이용자의 아이디어 공유 및 비즈니스 활성화를 도모하는 네트워킹 공간</li>
+         <li>회의 및 프레젠테이션이 가능하며, 소규모 행사 진행도 가능한 멀티 오픈 공간</li>
+         </ul>
+        </figcaption>
+       </div>
+      </li>
+      <li class="even">
+       <div class="facilities_capt">
+        <figure class="img"><img src="/images/contents/sub03/facilities_01_4.jpg" alt="비즈스퀘어 모습" /></figure>
+        <figcaption class="caption">
+         <strong>홍보마당</strong>
+         <ul class="li_th2">
+         <li>예비창업자, 지원기업, 일반인 등 기타센터 이용자의 아이디어 공유 및 비즈니스 활성화를 도모하는 네트워킹 공간</li>
+         <li>회의 및 프레젠테이션이 가능하며, 소규모 행사 진행도 가능한 멀티 오픈 공간</li>
+         </ul>
+        </figcaption>
+       </div>
+      </li>
+      </ul>
+     </div>
+    </div>

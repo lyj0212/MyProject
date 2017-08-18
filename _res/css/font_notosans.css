@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* Web Standardization Team, Author:JongWoon,LEE 2016.10.20 */
+/*
+ * @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+  * Noto Sans CJK KR(Korean)
+ */
+@font-face{
+	font-family:'Noto Sans';
+	font-style:normal;
+	font-weight:100;
+	src:url(/_res/webfonts/NotoSansKR-Thin.eot);
+	src:local('Noto Sans CJK KR Thin'), url(/_res/webfonts/NotoSansKR-Thin.eot?#iefix) format('embedded-opentype'), url(/_res/webfonts/NotoSansKR-Thin.woff2) format('woff2'), url(/_res/webfonts/NotoSansKR-Thin.woff) format('woff'), url(/_res/webfonts/NotoSansKR-Thin.ttf) format('truetype'), url(/_res/webfonts/NotoSansKR-Thin.svg#NotoSansKR-Thin) format('svg');
+}
+@font-face{
+	font-family:'Noto Sans';
+	font-style:normal;
+	font-weight:300;
+	src:url(/_res/webfonts/NotoSansKR-Light.eot);
+	src:local('Noto Sans CJK KR Light'), url(/_res/webfonts/NotoSansKR-Light.eot?#iefix) format('embedded-opentype'), url(/_res/webfonts/NotoSansKR-Light.woff2) format('woff2'), url(/_res/webfonts/NotoSansKR-Light.woff) format('woff'), url(/_res/webfonts/NotoSansKR-Light.ttf) format('truetype'), url(/_res/webfonts/NotoSansKR-Light.svg#NotoSansKR-Light) format('svg');
+}
+@font-face{
+	font-family:'Noto Sans';
+	font-style:normal;
+	font-weight:350;
+	src:url(/_res/webfonts/NotoSansKR-DemiLight.eot);
+	src:local('Noto Sans CJK KR DemiLight'), url(/_res/webfonts/NotoSansKR-DemiLight.eot?#iefix) format('embedded-opentype'), url(/_res/webfonts/NotoSansKR-DemiLight.woff2) format('woff2'), url(/_res/webfonts/NotoSansKR-DemiLight.woff) format('woff'), url(/_res/webfonts/NotoSansKR-DemiLight.ttf) format('truetype'), url(/_res/webfonts/NotoSansKR-DemiLight.svg#NotoSansKR-DemiLight) format('svg');
+}
+@font-face{
+	font-family:'Noto Sans';
+	font-style:normal;
+	font-weight:400;
+	src:url(/_res/webfonts/NotoSansKR-Regular.eot);
+	src:local('Noto Sans CJK KR Regular'), url(/_res/webfonts/NotoSansKR-Regular.eot?#iefix) format('embedded-opentype'), url(/_res/webfonts/NotoSansKR-Regular.woff2) format('woff2'), url(/_res/webfonts/NotoSansKR-Regular.woff) format('woff'), url(/_res/webfonts/NotoSansKR-Regular.ttf) format('truetype'), url(/_res/webfonts/NotoSansKR-Regular.svg#NotoSansKR-Regular) format('svg');
+}
+@font-face{
+	font-family:'Noto Sans';
+	font-style:normal;
+	font-weight:500;
+	src:url(/_res/webfonts/NotoSansKR-Medium.eot);
+	src:local('Noto Sans CJK KR Medium'), url(/_res/webfonts/NotoSansKR-Medium.eot?#iefix) format('embedded-opentype'), url(/_res/webfonts/NotoSansKR-Medium.woff2) format('woff2'), url(/_res/webfonts/NotoSansKR-Medium.woff) format('woff'), url(/_res/webfonts/NotoSansKR-Medium.ttf) format('truetype'), url(/_res/webfonts/NotoSansKR-Medium.svg#NotoSansKR-Medium) format('svg');
+}
+@font-face{
+	font-family:'Noto Sans';
+	font-style:normal;
+	font-weight:700;
+	src:url(/_res/webfonts/NotoSansKR-Bold.eot);
+	src:local('Noto Sans CJK KR Bold'), url(/_res/webfonts/NotoSansKR-Bold.eot?#iefix) format('embedded-opentype'), url(/_res/webfonts/NotoSansKR-Bold.woff2) format('woff2'), url(/_res/webfonts/NotoSansKR-Bold.woff) format('woff'), url(/_res/webfonts/NotoSansKR-Bold.ttf) format('truetype'), url(/_res/webfonts/NotoSansKR-Bold.svg#NotoSansKR-Bold) format('svg');
+}
+@font-face{
+	font-family:'Noto Sans';
+	font-style:normal;
+	font-weight:900;
+	src:url(/_res/webfonts/NotoSansKR-Black.eot);
+	src:local('Noto Sans CJK KR Black'), url(/_res/webfonts/NotoSansKR-Black.eot?#iefix) format('embedded-opentype'), url(/_res/webfonts/NotoSansKR-Black.woff2) format('woff2'), url(/_res/webfonts/NotoSansKR-Black.woff) format('woff'), url(/_res/webfonts/NotoSansKR-Black.ttf) format('truetype'), url(/_res/webfonts/NotoSansKR-Black.svg#NotoSansKR-Black) format('svg');
+}
+
+/* 
+ * Nanum Square Web Fonts
+ * Copyright (c) 2010, NAVER Corporation (http://www.nhncorp.com) 
+ */
+@font-face {
+	font-family:'Nanum Square';
+	font-style:normal;
+	font-weight:400;
+	src:url(/_res/webfonts/NanumSquareR.eot);
+	src:local('Nanum Square Regular'),
+		local('NanumSquareR'),
+		url(/_res/webfonts/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+		url(/_res/webfonts/NanumSquareR.woff2) format('woff2'),
+		url(/_res/webfonts/NanumSquareR.woff) format('woff'),
+		url(/_res/webfonts/NanumSquareR.ttf) format('truetype');
+}
+@font-face {
+	font-family:'Nanum Square';
+	font-style:bold;
+	font-weight:700;
+	src:url(/_res/webfonts/NanumSquareB.eot);
+	src:local('Nanum Square Bold'),
+		local('NanumSquareB'),
+		url(/_res/webfonts/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+		url(/_res/webfonts/NanumSquareB.woff2) format('woff2'),
+		url(/_res/webfonts/NanumSquareB.woff) format('woff'),
+		url(/_res/webfonts/NanumSquareB.ttf) format('truetype');
+}

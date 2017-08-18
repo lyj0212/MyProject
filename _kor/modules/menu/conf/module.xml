@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+
+	<name>메뉴관리</name>
+
+	<section>
+		<title>메뉴관리</title>
+		<date>2012-09-14</date>
+		<target>menu/manager/index</target>
+		<grants>
+			<grant title="메뉴보기" action="index" />
+			<grant title="메뉴관리" action="save_area|add_map|delete_map|add|save|delete|grant|grant_save" />
+		</grants>
+	</section>
+
+	<!-- 예시
+	<section>
+		<title>메뉴 관리</title>
+		<date>2012-08-14</date>
+		<target>menu/manager/index</target>
+		<param>
+			<sql>SELECT 'menu_id' as segment, id as value, title as title FROM {dbprefix}menu</sql>
+		</param>
+	</section>
+
+	<section>
+		<title>메뉴 1</title>
+		<date>2012-08-14</date>
+		<target>menu/manager/index2/id/2</target>
+	</section>
+
+	<section>
+		<title>메뉴 2</title>
+		<date>2012-08-14</date>
+		<target>menu/manager/index3</target>
+		<param>
+			<group title="메뉴2-1" segment="id" value="1" />
+			<group title="메뉴2-2" segment="id" value="2" />
+		</param>
+	</section>
+
+	<section>
+		<title>메뉴 3</title>
+		<date>2012-08-14</date>
+		<target>menu/manager/index4</target>
+	</section>
+	-->
+
+</module>

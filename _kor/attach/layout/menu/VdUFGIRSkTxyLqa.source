@@ -1,0 +1,20 @@
+<header>
+	<div class="nav">
+		<ul class="tMenu">
+			<li><a href="/">HOME</a></li>
+			<li><a href="/">ENGLISH</a></li>
+			<li><a href="/">CONTACT US</a></li>
+		</ul>
+		<h1><a href="/"><img src="/images/korean/common/t-logo.gif" alt="THE YOZMA GROUP managing venture capital funds since 1993" /></a></h1>
+	  <div class="float-layout">
+		<ul id="gNavigation">
+		  <!--{@ LOOP}-->
+		  <li<!--{? .ACTIVE}--> class="on"<!--{/}-->>
+			<a href="{.LINK}"<!--{? .SUB_ENTRIES}--> <!--{/}--><!--{? .WIN_TARGET}--> target="{.WIN_TARGET}"<!--{/}-->><!--{? .ACTIVE}--><!--{/}-->{.TITLE}<!--{? .SUB_ENTRIES}--><!--{/}--></a>
+			{.SUB_ENTRIES}
+		  </li>
+		  <!--{/}-->
+		</ul>
+	  </div>
+  </div>
+</header>

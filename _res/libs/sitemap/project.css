@@ -1,0 +1,87 @@
+.portlet{position:relative;border:1px solid #e9e9e9;margin:1em 0;padding:0;background:#fff;zoom:1;overflow:hidden;border-radius:5px}
+
+.portlet p{margin:1em 1.2em}
+.portlet li{position:relative;padding-right:8em}
+.portlet .lined{margin:1px !important;padding:0;list-style:none}
+.portlet .lined li{padding:.5em 8em .5em 1em;border-top:1px solid #eee;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis}
+.portlet .lined li:first-child{border:0}
+.portlet .side{display:none; position:absolute;top:0;_top:1px;right:0;color:#666;background:#fff;padding:0 1em}
+.portlet .lined .side{padding:.5em 1em}
+.portlet .more{position:absolute;top:.5em;right:1em;text-decoration:none !important;color:#666}
+.portlet .more span{color:#999}
+.portlet .action{text-align:right;top:0;right:0;padding:.5em 1em .5em 3em;background:#fff;background:-webkit-gradient(linear, 0% 0%, 100% 0%, from(rgba(255,255,255,0)), to(rgba(255,255,255,1)), color-stop(15%, #fff));background:-moz-linear-gradient(left, rgba(255,255,255,0) 0, rgba(255,255,255,1) 15%)}
+.portlet .action a,
+.portlet .action button{margin-left:1em}
+.portlet .btnArea{border-top:1px solid #ddd;margin:0;padding:15px 1em;margin:0 1px 1px 1px;background:#f7f7f7;border-radius:0 0 5px 5px}
+
+.sortablemenu .project_header { margin:0;padding:.5em 0; font-weight:bold; font-size:12px; border:1px solid #fff;border-bottom:1px solid #e9e9e9;background:#f7f7f7;border-radius:5px 5px 0 0 }
+.sortablemenu .lined ul{padding:0;margin:0;border-top:1px solid #eee;zoom:1}
+.sortablemenu .lined li{position:relative;padding:0;margin:0;cursor:all-scroll;list-style:none;zoom:1}
+.sortablemenu .lined li li{border-top:1px solid #eee}
+.sortablemenu ul { list-style-type:none; }
+.sortablemenu li .project_inline { padding:12px 0; }
+.sortablemenu li .project_th { display:inline-block; zoom:1; *display:inline; }
+
+.sortablemenu .project_state { float:left; width:120px; text-align:center; }
+.sortablemenu .project_title { float:left; }
+.sortablemenu .project_manager { float:right; width:105px; text-align:center; }
+.sortablemenu .project_start { float:right; width:90px; text-align:center; }
+.sortablemenu .project_end { float:right; width:90px; text-align:center; }
+.sortablemenu .project_complete { float:right; width:90px; text-align:center; }
+
+.sortablemenu li .project_business_inline { }
+.sortablemenu .project_business_state { float:left; width:120px; text-align:center; padding:12px 0;  }
+.sortablemenu .project_business_end { float:left; width:100px; text-align:center; padding:12px 0;  }
+.sortablemenu .project_business_complete { float:left; width:120px; text-align:center; padding:12px 0; }
+.sortablemenu .project_business_title { float:left; padding:12px 0; }
+.sortablemenu .project_business_manager { float:right; width:105px; text-align:center; padding:12px 0; }
+.sortablemenu .project_business_btn { float:right; width:90px; text-align:center; padding:6px 0; }
+.sortablemenu .project_header .project_th { padding:0; }
+
+.sortablemenu li li .project_title{text-indent:18px;}
+.sortablemenu li li li .project_title{text-indent:36px}
+.sortablemenu li li li li .project_title{text-indent:54px}
+.sortablemenu li li li li li .project_title{text-indent:72px}
+.sortablemenu li li li li li li .project_title{text-indent:90px}
+.sortablemenu li li li li li li li .project_title{text-indent:108px}
+.sortablemenu li li li li li li li li .project_title{text-indent:126px}
+.sortablemenu li li li li li li li li li .project_title{text-indent:144px}
+.sortablemenu li li li li li li li li li li .project_title{text-indent:162px}
+.sortablemenu li li li li li li li li li li li .project_title{text-indent:180px}
+.sortablemenu li li li li li li li li li li li li .project_title{text-indent:198px}
+
+.sortablemenu li li .project_business_title{text-indent:18px;}
+.sortablemenu li li li .project_business_title{text-indent:36px}
+.sortablemenu li li li li .project_business_title{text-indent:54px}
+.sortablemenu li li li li li .project_business_title{text-indent:72px}
+.sortablemenu li li li li li li .project_business_title{text-indent:90px}
+.sortablemenu li li li li li li li .project_business_title{text-indent:108px}
+.sortablemenu li li li li li li li li .project_business_title{text-indent:126px}
+.sortablemenu li li li li li li li li li .project_business_title{text-indent:144px}
+.sortablemenu li li li li li li li li li li .project_business_title{text-indent:162px}
+.sortablemenu li li li li li li li li li li li .project_business_title{text-indent:180px}
+.sortablemenu li li li li li li li li li li li li .project_business_title{text-indent:198px}
+
+.sortablemenu .moveTo{position:absolute;z-index:2;width:22px;height:32px;padding:32px 0 0 0;margin:0 3px;_margin-top:-1px;overflow:hidden;background:url(iconMoveTo.gif) no-repeat center 0;border:0;cursor:move}
+.sortablemenu li.active,
+.sortablemenu li.active li,
+.sortablemenu li.active .moveTo{background-color:#F7F7F7 !important}
+.sortablemenu li.active li,
+.sortablemenu li.active ul{border-top-color:#F7F7F7}
+.sortablemenu li.active .moveTo{background-position:center -32px}
+.sortablemenu li.toggled{background-color:#ffeeee}
+
+.sortablemenu .side{padding-top:0 !important;padding-bottom:0 !important;line-height:35px;background:transparent !important}
+.sortablemenu .side a{text-indent:0;line-height:1}
+.sortablemenu .tgMap{position:absolute;top:20px;right:1em;padding:0 16px 0 0;line-height:16px;}
+.sortablemenu .placeholder{background:#bbb}
+.sortablemenu .draggable,
+.sortablemenu .draggable .moveTo{background-color:#ddd}
+.sortablemenu .draggable .summary{border-left:1px solid #ccc;padding-left:10px;margin-left:10px;font-size:11px;color:#999}
+.sortablemenu a.ms{text-decoration:underline}
+.sortablemenu span {text-indent:0;}
+
+.sortablemenu ul li .stand_alone { margin-left:5px; line-height:32px; }
+.sortablemenu ul li .stand_with { line-height:32px; }
+
+.touch_navi { position:fixed; left:0; right:0; bottom:0; z-index:1000; background-color:#EEE; border-top:1px solid #CCC; padding:5px; }

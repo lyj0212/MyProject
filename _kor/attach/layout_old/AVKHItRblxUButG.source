@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+<title>D-CUBE(D3) 클러스터 플랫폼</title>
+<link rel="stylesheet" href="/_res/libs/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/_res/css/theme.css">
+<link rel="stylesheet" href="/manager/css/style.css?v=20130130">
+<link rel="stylesheet" href="/_res/css/iSmartCode.css">
+<link rel="stylesheet" href="/_res/css/project.css">
+<link rel="stylesheet" href="/_res/css/font_notosans.css" />
+<link rel="shortcut icon" href="/images/ico/favicon_cms.ico" />
+</head>
+<body>
+
+<!-- navbar -->
+<nav class="navbar navbar-inverse" role="navigation">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" id="menu-toggler">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+
+		<a class="navbar-brand" href="/<?php echo $this->menu->current['map']; ?>">D-CUBE(D3) 클러스터 플랫폼 ADMIN</a>
+	</div>
+
+	<div class="collapse navbar-collapse">
+		<ul class="nav navbar-nav navbar-right">
+			<li class="notification-dropdown hidden-xs">
+				<a href="<?php echo CI::$APP->_message_link(); ?>" class="trigger _popup" data-width="95%">
+				<i class="glyphicon glyphicon-envelope"></i>
+				<?php if($this->account->get('new_message') > 0) : ?>
+						<span class="count"><?php echo number_format($this->account->get('new_message')); ?></span>
+				<?php endif; ?>
+				</a>
+			</li>
+			<li class="dropdown">
+			<a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown">
+				<?php echo $this->account->get('name'); ?>님
+				<b class="caret"></b>
+			</a>
+			<ul class="dropdown-menu">
+				<li><a href="<?php echo $this->link->get(array('module'=>'member', 'controller'=>'accounts', 'action'=>'logout')); ?>">로그아웃</a></li>
+				<li><a href="<?php echo $this->link->get(array('prefix'=>'member', 'module'=>'member', 'controller'=>'manager', 'action'=>'write', 'id'=>$this->account->get('id'))); ?>">회원정보수정</a></li>
+			</ul>
+			</li>
+			<li class="settings hidden-xs">
+			<a href="/" role="button">
+			<i class="glyphicon glyphicon-share-alt"></i>
+			</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+<!-- end navbar -->
+
+<!-- sidebar -->
+<div id="sidebar-nav">
+	<?php echo $topmenu; ?>
+</div>
+<!-- end sidebar -->
+
+<!-- main container -->
+<div class="content">
+
+	<div id="pad-wrapper">
+		<div class="row header">
+			<h4><?php echo $this->menu->current['title']; ?></h4>
+		</div>
+
+		<div class="row">
+			<?php echo $content_for_layout; ?>
+		 </div>
+	</div>
+</div>
+<!-- end main container -->
+
+</body>
+</html>

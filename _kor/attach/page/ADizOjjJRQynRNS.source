@@ -1,0 +1,30 @@
+<div class="transfer_wrap platformsvc">
+					<h2><em>원활한 소통과 전문적인 기업서비스 제공을 위한</em> 소통 플랫폼은?</h2>
+					<ul class="platform_intro">
+					<li>
+						<div class="thumb hope_platform">
+							<strong>기업 관련 다양한 전문 정보 제공</strong>
+							<p class="txtp">정부지원사업을 포함하여 다양한 정보를 모아서 <br/>제공함으로 SW융합 클러스터 기업들은 <br/>간편하게 공유 및 스크랩</p>
+						</div>
+					</li>
+					<li>
+						<div class="thumb human_platform">
+							<strong>네트워킹 활성화를 위한 인맥추천 서비스</strong>
+							<p class="txtp">SW융합클러스터 기업 및 참여 기관에 대한 <br/>인맥 추천 서비스를 통하여 협업할 수 있는 장을 <br/>마련</p>
+						</div>
+					</li>
+					<li>
+						<div class="thumb schedule_platform">
+							<strong>편리한 업무를 위한 일정관리 서비스</strong>
+							<p class="txtp">주고 받은 업무정보 중 날짜기반의 메타정보가 <br/>있는 정보만 모아서 자동으로 일정을 등록하고 <br/>등록된 일정을 함께 수정하고 관리할 수 있는 <br/>서비스를 제공</p>
+						</div>
+					</li>
+					</ul>
+					<div class="basic_box">
+						<p class="txtp">이 모든 서비스는 SW융합클러스터 참여 기업 및 기관에게 무료로 제공됩니다.<br/>홈페이지에서 사용하던 계정정보를 이용하여 로그인이 가능합니다.<br/>(Mypage 플랫폼 정보이관부터 진행해주세요)</p>
+					</div>
+
+					<div class="btn_wrap text-center">
+						<a class="btn btn-lg btn-primary" href="http://cube.y-bridge.co.kr" target="_blank" title="새창에서 열림"><span class="icon-popup-4">플랫폼 서비스 바로가기</span></a>
+					</div>
+				</div>

@@ -1,0 +1,108 @@
+/* DaumEditor */
+.attacharea { display:none; position:relative;border:1px solid #e9e9e9;margin:1em 0;padding:0;background:#fff;zoom:1;overflow:hidden;border-radius:5px }
+.attachcontainer { display:none; }
+.attacharea h2 { margin:0;padding:15px;font-size:13px;font-weight:bold;color:#317EAC;border:1px solid #fff;border-bottom:1px solid #e9e9e9;background:#f7f7f7;border-radius:5px 5px 0 0 }
+.attacharea h5 { margin:0; padding:5px 0 5px 20px; border-bottom:1px solid #EEE; font-size:9pt;color:#317EAC;line-height:20px; }
+.attacharea h5 .icon { display:block; float:left; margin-right:5px; width:15px; height:17px; line-height:0; font-size:0; background:url(/_kor/modules/daumeditor/images/icon/editor/skin/06/tx_text2.gif); background-repeat:no-repeat; }
+.attacharea h5 .image { background-position:0 3px; }
+.attacharea h5 .media { background-position:-48px 3px; }
+.attacharea h5 .file { background-position:-106px 3px; }
+
+.attacharea ul { list-style-type:none; }
+
+.attacharea #fsUploadProgress_image li { position:relative; float:left; width:70px; padding:0 5px; margin:5px 0 15px 0; display:inline-block; text-align:center; vertical-align:top; }
+.attacharea #fsUploadProgress_image li .progressContainer { position:relative; width:70px; height:70px; overflow:hidden; }
+.attacharea #fsUploadProgress_image li .progressContainer .thumb { height:68px; display:block;padding:4px;line-height:20px;border:1px solid #ddd;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.055);-moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.055);box-shadow:0 1px 3px rgba(0, 0, 0, 0.055);-webkit-transition:all 0.2s ease-in-out;-moz-transition:all 0.2s ease-in-out;-o-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out; }
+.attacharea #fsUploadProgress_image li .progressContainer .thumb img { width:60px; height:60px; }
+.attacharea #fsUploadProgress_image li .progressContainer .caption { position:absolute; top:70px; padding:3px 0 !important; width:60px; background-color:#000; left:5px; -webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0;border-radius:4px 4px 0 0; }
+.attacharea #fsUploadProgress_image li .progressName { text-align:center; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow:hidden; }
+.attacharea #fsUploadProgress_image li .progressSize { text-align:center; font-size:8pt; color:#999; }
+.attacharea #fsUploadProgress_image li .progressContainer .uploadify-progress { margin-top:25px; height:6px; border:2px solid #EEE; position:relative; display:block; -webkit-border-radius:2px;-moz-border-radius:2px; border-radius:2px; background-color:rgb(238, 238, 238); }
+.attacharea #fsUploadProgress_image li .progressContainer .uploadify-progress-bar { position:absolute; height:6px; z-index:1; background-color:#0893F0; -webkit-border-radius:3px;-moz-border-radius:3px; border-radius:3px; }
+.attacharea #fsUploadProgress_image li .progressContainer .data { position:relative; margin-top:10px; text-align:center; font-size:8pt; color:#999; }
+.attacharea #fsUploadProgress_image .uploadify-error .progressContainer { background-color:#FDE5DD; }
+
+.attacharea #fsUploadProgress_media li { float:left; display:inline-block; margin:5px 5px 15px 0; width:120px; vertical-align:top;  }
+.attacharea #fsUploadProgress_media li .progressContainer { position:relative; overflow:hidden; height:48px; padding:4px;line-height:20px;border:1px solid #ddd;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.055);-moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.055);box-shadow:0 1px 3px rgba(0, 0, 0, 0.055);-webkit-transition:all 0.2s ease-in-out;-moz-transition:all 0.2s ease-in-out;-o-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out; }
+.attacharea #fsUploadProgress_media li .progressName { text-align:center; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow:hidden; }
+.attacharea #fsUploadProgress_media li .progressSize { text-align:center; font-size:8pt; color:#999; }
+.attacharea #fsUploadProgress_media li .progressContainer .caption { position:absolute; top:50px; padding:3px 0 !important; width:110px; text-align:center; background-color:#000; left:5px; -webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0;border-radius:4px 4px 0 0; }
+.attacharea #fsUploadProgress_media li .progressContainer .uploadify-progress { margin-top:8px; height:6px; border:2px solid #EEE; position:relative; display:block; -webkit-border-radius:2px;-moz-border-radius:2px; border-radius:2px; background-color:rgb(238, 238, 238); }
+.attacharea #fsUploadProgress_media li .progressContainer .uploadify-progress-bar { position:absolute; height:6px; z-index:1; background-color:#0893F0; -webkit-border-radius:3px;-moz-border-radius:3px; border-radius:3px; }
+.attacharea #fsUploadProgress_media li .progressContainer .data { position:relative; margin-top:10px; text-align:center; font-size:8pt; color:#999; }
+.attacharea #fsUploadProgress_media .uploadify-error .progressContainer { background-color:#FDE5DD; }
+
+.attacharea #fsUploadProgress_file li { float:left; display:inline-block; margin:5px 5px 15px 5px; width:120px; vertical-align:top; }
+.attacharea #fsUploadProgress_file li .progressContainer { position:relative; overflow:hidden; height:48px; padding:4px;line-height:20px;border:1px solid #ddd;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.055);-moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.055);box-shadow:0 1px 3px rgba(0, 0, 0, 0.055);-webkit-transition:all 0.2s ease-in-out;-moz-transition:all 0.2s ease-in-out;-o-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out; }
+.attacharea #fsUploadProgress_file li .progressName { text-align:center; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow:hidden; }
+.attacharea #fsUploadProgress_file li .progressSize { text-align:center; font-size:8pt; color:#999; }
+.attacharea #fsUploadProgress_file li .progressContainer .caption { position:absolute; top:50px; padding:3px 0 !important; width:110px; text-align:center; background-color:#000; left:5px; -webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0;border-radius:4px 4px 0 0; }
+.attacharea #fsUploadProgress_file li .progressContainer .uploadify-progress { margin-top:8px; height:6px; border:2px solid #EEE; position:relative; display:block; -webkit-border-radius:2px;-moz-border-radius:2px; border-radius:2px; background-color:rgb(238, 238, 238); }
+.attacharea #fsUploadProgress_file li .progressContainer .uploadify-progress-bar { position:absolute; height:6px; z-index:1; background-color:#0893F0; -webkit-border-radius:3px;-moz-border-radius:3px; border-radius:3px; }
+.attacharea #fsUploadProgress_file li .progressContainer .data { position:relative; margin-top:10px; text-align:center; font-size:8pt; color:#999; }
+.attacharea #fsUploadProgress_file .uploadify-error .progressContainer { background-color:#FDE5DD; }
+
+/* Normal */
+.attacharea_normal { list-style-type:none; margin:0; padding:0; }
+.attacharea_normal li.image { position:relative; float:left; width:80px; padding:0 5px; margin:5px 0 15px 0; display:inline-block; text-align:center; vertical-align:top; }
+.attacharea_normal li.image .progressContainer { position:relative; width:70px; height:70px; overflow:hidden; }
+.attacharea_normal li.image .progressContainer .thumb { height:68px; display:block;padding:4px;line-height:20px;border:1px solid #ddd;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.055);-moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.055);box-shadow:0 1px 3px rgba(0, 0, 0, 0.055);-webkit-transition:all 0.2s ease-in-out;-moz-transition:all 0.2s ease-in-out;-o-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out; }
+.attacharea_normal li.image .progressContainer .thumb img { max-width:60px; max-height:60px; _width:60px; _height:60px; }
+.attacharea_normal li.image .progressContainer .caption { position:absolute; top:70px; padding:3px 0 !important; width:60px; background-color:#000; left:5px; -webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0;border-radius:4px 4px 0 0; }
+.attacharea_normal li.image .progressName { text-align:center; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow:hidden; }
+.attacharea_normal li.image .progressSize { text-align:center; font-size:8pt; color:#999; }
+.attacharea_normal li.image .progressContainer .uploadify-progress { margin-top:25px; height:6px; border:2px solid #EEE; position:relative; display:block; -webkit-border-radius:2px;-moz-border-radius:2px; border-radius:2px; background-color:rgb(238, 238, 238); }
+.attacharea_normal li.image .progressContainer .uploadify-progress-bar { position:absolute; height:6px; z-index:1; background-color:#0893F0; -webkit-border-radius:3px;-moz-border-radius:3px; border-radius:3px; }
+.attacharea_normal li.image .progressContainer .data { position:relative; margin-top:10px; text-align:center; font-size:8pt; color:#999; }
+.attacharea_normal li.image .uploadify-error .progressContainer { background-color:#FDE5DD; }
+
+.attacharea_normal li.file { float:left; display:inline-block; margin:5px 5px 15px 0; width:120px; vertical-align:top; }
+.attacharea_normal li.file .progressContainer { position:relative; overflow:hidden; height:48px; padding:4px;line-height:20px;border:1px solid #ddd;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.055);-moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.055);box-shadow:0 1px 3px rgba(0, 0, 0, 0.055);-webkit-transition:all 0.2s ease-in-out;-moz-transition:all 0.2s ease-in-out;-o-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out; }
+.attacharea_normal li.file .progressName { text-align:center; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow:hidden; }
+.attacharea_normal li.file .progressSize { text-align:center; font-size:8pt; color:#999; }
+.attacharea_normal li.file .progressContainer .caption { position:absolute; top:50px; padding:3px 0 !important; width:110px; text-align:center; background-color:#000; left:5px; -webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0;border-radius:4px 4px 0 0; }
+.attacharea_normal li.file .progressContainer .uploadify-progress { margin-top:8px; height:6px; border:2px solid #EEE; position:relative; display:block; -webkit-border-radius:2px;-moz-border-radius:2px; border-radius:2px; background-color:rgb(238, 238, 238); }
+.attacharea_normal li.file .progressContainer .uploadify-progress-bar { position:absolute; height:6px; z-index:1; background-color:#0893F0; -webkit-border-radius:3px;-moz-border-radius:3px; border-radius:3px; }
+.attacharea_normal li.file .progressContainer .data { position:relative; margin-top:10px; text-align:center; font-size:8pt; color:#999; }
+.attacharea_normal li.file .uploadify-error .progressContainer { background-color:#FDE5DD; }
+
+.html5-drag-area { padding:20px; text-align:center; border:3px dotted #BBB; }
+.attacharea .html5-drag-area { margin:5px; padding:30px; }
+.darg_over { border:3px dotted #cc6600; }
+
+
+/*2016-11-22수정*/
+.attacharea{overflow:visible;margin:10px 0}
+.plupload_wrapper{margin:0 !important}
+.plupload_container{background:transparent !important}
+.plupload_content{display:block;position:relative;padding-top:22px;background-color:transparent}
+.plupload_filelist_header{display:none}
+.plupload_content > .plupload_file_size{position:absolute;top:0;right:0;width:140px;font-size:0.857em;line-height:1.833em;color:#aab2bd;text-align:right}
+.plupload_content > .plupload_file_size .plupload_total_file_size{}
+.plupload_content .plupload_filelist{display:inline-block;width:100%;margin:0 !important;border:1px dashed #c4ccd8 !important;border-radius:3px !important;background-color:#eceff4}
+.plupload_content .plupload_filelist.darg_over{border:1px dashed #f05a64 !important}
+.plupload_content .plupload_filelist li{display:block;float:left;position:relative;width:100%;min-height:30px;padding:5px 140px 5px 10px;border-color:#dce1e8;font-size:0.929em;line-height:1.54em;color:#656d78;letter-spacing:-0.04em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.plupload_content .plupload_filelist li.plupload_droptext{min-height:40px;padding:10px 5px;font-weight:500;font-size:14px;line-height:1.428em;color:#aab2bd;letter-spacing:-0.03em;text-align:center}
+.plupload_content .plupload_filelist.darg_over li.plupload_droptext{color:#f05a64}
+.plupload_content .plupload_filelist li .btn_attach_ins,.plupload_content .plupload_filelist li .btn_attach_del{height:20px;padding:3px 0 2px;margin:0 5px 0 0}
+.plupload_content .plupload_filelist li .btn_attach_ins img,.plupload_content .plupload_filelist li .btn_attach_del img{vertical-align:middle}
+.plupload_content .plupload_filelist li div[class^="plupload_file"]{font-size:1em}
+.plupload_content .plupload_filelist li .plupload_file_info{position:absolute;top:5px;right:5px}
+.plupload_content .plupload_filelist li .plupload_file_info div[class^="plupload_file"]{float:right}
+.plupload_content .plupload_filelist li .plupload_file_status,.plupload_content .plupload_filelist li .plupload_file_size{font-size:1em;line-height:1.54em;letter-spacing:-0.04em}
+.plupload_content .plupload_filelist li .plupload_file_status{width:40px}
+.plupload_content .plupload_filelist li .plupload_file_size{width:70px}
+.plupload_content .plupload_filelist li.plupload_uploading{background:#eceff4}
+.plupload_content .plupload_filelist li.plupload_uploading .plupload_file_status{color:#f05a64}
+.plupload_content .plupload_filelist li.plupload_uploading .plupload_file_size{color:#f05a64}
+.plupload_content .plupload_filelist li.plupload_done:hover,.plupload_content .plupload_filelist li.plupload_done:active,.plupload_content .plupload_filelist li.plupload_done:focus{background-color:#fff}
+.plupload_content .plupload_filelist li .plupload_file_action{width:20px;height:20px;margin:0 0 0 5px}
+.plupload_content .plupload_filelist li .plupload_file_action a{display:block;width:20px;height:20px;background:url(/_kor/modules/attachment/js/plupload/js/jquery.plupload.queue/img/plupload_file_action_chk.png) no-repeat 0 0}
+.plupload_content .plupload_filelist_footer{padding:5px;background:none;font-weight:500;font-size:0.929em;line-height:1.54em;color:#f05a64 !important;letter-spacing:-0.04em}
+.plupload_filelist_footer .plupload_file_action{width:20px;height:20px;margin:0 0 0 10px !important}
+.plupload_filelist_footer .plupload_upload_status{font-size:1em;line-height:1.54em;color:#f05a64;letter-spacing:-0.04em}
+.plupload_filelist_footer .plupload_file_status{width:40px}
+.plupload_filelist_footer .plupload_file_status span{font-size:1em;line-height:1.54em;color:#f05a64}
+.plupload_filelist_footer .plupload_progress{float:none;width:100%;padding:0 135px 0 120px}
+.plupload_filelist_footer .plupload_progress_container{padding:0;margin-top:10px;border:0 none;background-color:#e3e7ee}
+.plupload_filelist_footer .plupload_progress_bar{height:2px;background-color:#f05a64}

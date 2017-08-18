@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+
+	<name>게시판</name>
+
+	<section>
+		<title>게시판</title>
+		<date>2012-09-13</date>
+		<target>board/bbs/index</target>
+		<param>
+			<sql>SELECT 'tableid' as segment, tableid as value, title as title FROM {dbprefix}bbs_setup</sql>
+		</param>
+		<grants>
+			<grant title="목록보기" action="bbs.index" default="allow" />
+			<grant title="내용보기" action="bbs.view" default="allow">
+				<option query="SELECT id FROM {dbprefix}bbs WHERE id='{param.id}' AND ismember='{memberid}'" />
+			</grant>
+			<grant title="댓글쓰기" action="comment|comment_write|comment_save|comment_delete">
+				<option uncase="param.cid" default="allow" />
+				<option case="param.cid" query="SELECT id FROM {dbprefix}comment WHERE id='{param.cid}' AND ismember='{memberid}'" />
+			</grant>
+			<grant title="글쓰기" action="bbs.write|bbs.save|bbs.delete">
+				<option uncase="param.id" />
+				<option case="param.id" query="SELECT id FROM {dbprefix}bbs WHERE id='{param.id}' AND ismember='{memberid}'" />
+			</grant>
+			<grant title="상태변경" action="bbs.change_status" />
+		</grants>
+		<notification>
+			<option title="새로운 글 등록 시" action="save" default_message="{제목}" possible_field="{제목|subject}, {글쓴이|name}" />
+		</notification>
+	</section>
+
+	<section>
+		<title>게시판 관리</title>
+		<date>2012-09-13</date>
+		<target>board/manager/index</target>
+	</section>
+
+</module>

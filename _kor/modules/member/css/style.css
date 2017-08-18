@@ -1,0 +1,95 @@
+.login-bg {
+	background: url(../img/loginbg.jpg) no-repeat center center fixed;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/loginbg.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/loginbg.jpg', sizingMethod='scale')";
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.login-wrapper {
+	position: absolute;
+	top: 90px;
+	width:100%;
+	text-align: center;
+}
+
+.login-wrapper .brand {
+	margin-bottom:25px;
+	display:block;
+	color: #ffffff;
+	font-family:'Telex', sans-serif;
+	font-size:20px;
+	font-weight: lighter;
+	padding: 12px 20px 12px;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.login-wrapper .box {
+	margin: 0 auto;
+	padding: 35px 0 30px;
+	float: none;
+	width: 400px;
+	box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	background: rgba(255, 255, 255, 0.60);
+}
+
+.login-wrapper .box .content-wrap {
+	width: 82%;
+	margin: 0 auto;
+}
+
+.login-wrapper .box h6 {
+	text-transform: uppercase;
+	margin: 0 0 30px 0;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.login-wrapper .box input[type="text"],
+.login-wrapper .box input[type="password"] {
+	height: 40px;
+	margin-bottom: 18px;
+}
+
+.login-wrapper .box input[type="password"] {
+	margin-bottom: 10px;
+}
+
+.login-wrapper .box input:-moz-placeholder {
+	color: #9ba8b6;
+	letter-spacing: 0;
+}
+
+.login-wrapper .box input:-ms-input-placeholder {
+	color: #9ba8b6;
+	letter-spacing: 0;
+}
+
+.login-wrapper .box input::-webkit-input-placeholder {
+	color: #9ba8b6;
+	letter-spacing: 0;
+}
+
+.login-wrapper .box .remember {
+	margin-bottom: 20px;
+	text-align:left;
+}
+
+.login-wrapper .box .remember label {
+	color: #4a576a;
+	font-size: 13px;
+}
+
+/* responsive */
+@media (max-width: 767px) {
+	.login-wrapper .box {
+		width: 350px; }
+}
+
+@media (max-width: 480px) {
+	.login-wrapper .box {
+		width: 90%; }
+}

@@ -1,0 +1,65 @@
+#gridgallery {
+	position:relative;
+	width:100%;
+	padding-bottom: 10px;
+	
+}
+.grid{
+	width:188px;
+	min-height:100px;
+	padding: 15px;
+	background:#fff;
+	margin:8px;
+	font-size:12px;
+	float:left;
+	box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+	-moz-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+	-webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+	-webkit-transition: top 1s ease, left 1s ease;
+	-moz-transition: top 1s ease, left 1s ease;
+	-o-transition: top 1s ease, left 1s ease;
+	-ms-transition: top 1s ease, left 1s ease;
+}
+
+.club_gallery .grid {
+	padding:0;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.grid strong {
+	border-bottom:1px solid #ccc;
+	margin:10px 0;
+	display:block;
+	padding:0 0 5px;
+	font-size:14px;
+}
+.grid .meta{
+	text-align:right;
+	color:#777;
+}
+
+.grid .imgholder {
+	text-align:center;
+}
+
+.grid .imgholder img{
+	max-width:100%;
+	background:#ccc;
+}
+
+
+/*2016-12-21 수정*/
+.table_wrap.gallery_wrap{overflow:hidden}
+#gridgallery{display:block;position:relative;width:1144px;margin:0 -8px 20px;padding:0;border-bottom:1px solid #dadada}
+.grid{position:relative;overflow:hidden;width:272px !important;min-height:210px;padding:20px 20px 50px;margin:0 8px;border:1px solid #c9cacc;border-top-color:#d9dadb;border-left-color:#d9dadb;box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;font-size:1em}
+.grid .imgholder{display:block;position:relative;min-height:115px;margin:-20px -20px 20px;background:#eeeff3 url(/images/common/no_photo_img.png) no-repeat 50% 50%}
+.grid .imgholder > a{display:block}
+.grid strong.subject{display:block;margin:0 0 10px;padding:0;border-bottom:none;font-size:1.429em;line-height:1.2em;color:#313131;letter-spacing:-0.0375em}
+.grid strong.subject > a{display:block;line-height:1.2em;color:#313131;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.grid .photo_cnts{display:block;margin-bottom:10px}
+.grid .photobtm_wrap{display:block;position:absolute;bottom:0;left:0;width:100%;height:40px;padding:10px 20px;background:#fafbfd}
+.grid .photobtm_wrap .created,.grid .photobtm_wrap .hit{display:block;color:#6d7483}
+.grid .photobtm_wrap .created{float:left}
+.grid .photobtm_wrap .hit{float:right}

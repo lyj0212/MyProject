@@ -1,0 +1,73 @@
+<h2>대전정보문화산업진흥원 2층</h2>
+				<p class="location_add">(34126) 대전광역시 유성구 대덕대로 512번길 20<br/>Tel.(042)479-4114 [평일], 479-4116[휴일] </p>
+				
+				<h3>자가용 이용시</h3>
+				<h4>경부고속도로</h4>
+				<p class="location_car">회덕IC → 호남고속도로(광주방면) → 북대전 IC</p>
+
+				<h4>호남고속도로</h4>
+				<p class="location_car">호남고속도로(광주방면) → 북대전 IC</p>
+				
+				<h4>대전통영고속</h4>
+				<p class="location_car">대전통영도로(대전방면) → 남부순환도로(대전방면) → 경부고속도로진입(서울방면)<br/> → 회덕 IC → 호남고속도로(광주방면) → 북대전 IC</p>
+				
+				<h4>북대전 IC</h4>
+				<p class="location_car">대전정보문화산업진흥원까지 약 10분 소요</p>
+
+				<div class="lacation_mapWrap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3212.277474930255!2d127.37803213629314!3d36.37827633189509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35654a28faf8150b%3A0x83b591b85c4e2034!2z64yA7KCE66y47ZmU7IKw7JeF7KeE7Z2l7JuQ!5e0!3m2!1sko!2skr!4v1481250045699" width="100%" height="100%" frameborder="0" allowfullscreen title="대전정보문화산업진흥원 지도"></iframe></div>
+
+				<h3 class="h3">대전시내버스 이용시(대중교통)</h3>
+				<div class="location_trafficWrap">
+					<table class="bbs_table text-center">
+					<caption>대전시내버스 이용시(대중교통) - 차량번호별 기점, 종점, 하차정류장으로 나뉘어 설명</caption>
+					<colgroup>
+						<col /><col /><col /><col/>
+					</colgroup>
+					<thead>
+					<tr>
+						<th scope="col">번호</th>
+						<th scope="col">기점</th>
+						<th scope="col">종점</th>
+						<th scope="col">하차정류장</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td scope="row">104</td>
+						<td>수통골</td>
+						<td>탄방역</td>
+						<td>국립중앙과학관</td>
+					</tr>
+					<tr>
+						<td scope="row">301</td>
+						<td>봉산동</td>
+						<td>동물원</td>
+						<td>엑스포과학공원</td>
+					</tr>
+					<tr>
+						<td scope="row">604</td>
+						<td>자운동</td>
+						<td>신흥동</td>
+						<td>국립중앙과학관</td>
+					</tr>
+					<tr>
+						<td scope="row">606</td>
+						<td>자운동</td>
+						<td>신흥동</td>
+						<td>엑스포과학공원</td>
+					</tr>
+					<tr>
+						<td scope="row">318</td>
+						<td>동물원</td>
+						<td>대덕대학</td>
+						<td>엑스포과학공원</td>
+					</tr>
+					<tr>
+						<td scope="row">918</td>
+						<td>탑립</td>
+						<td>시청환승지</td>
+						<td>엑스포과학공원</td>
+					</tr>
+					</tbody>
+					</table>
+				</div>

@@ -1,0 +1,6 @@
+<ul>
+  <!--{@ LOOP}-->
+  <li><a href="{.LINK}"><span class="staticicon svc_{.ICON}"></span> <span class="title">{.TITLE}<!--{? .N}--><span class="badge">{.N}</span><!--{/}--></span></a></li>
+  <!--{/}-->  
+  <li><a href="/setting"><span class="staticicon svc_13"></span> <span class="title">환경설정</span></a></li>
+</ul> 

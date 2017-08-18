@@ -1,0 +1,6 @@
+	<!--{@ LOOP}-->
+	<li class="th1">
+	  <a class="lnk_th1 <!--{? .ACTIVE}-->active<!--{/}-->" href="{.LINK}"<!--{? .SUB_ENTRIES}--> <!--{/}--><!--{? .WIN_TARGET}--> target="{.WIN_TARGET}"<!--{/}-->><!--{? .ACTIVE}--><!--{/}-->{.TITLE}<!--{? .SUB_ENTRIES}--><!--{/}--></a>
+	  {.SUB_ENTRIES}
+	</li>
+	<!--{/}-->

@@ -1,0 +1,69 @@
+<h2>회의실 사용안내 <span class="h2_desc">전문적인 비즈니스 환경을 완비하고 있으며 교육, 회의, 워크샵, 정모,포럼 등 다목적으로 이용이 가능한 회의실입니다.</span></h2>
+
+    <div class="conference_wrap">
+     <table class="bbs_table">
+      <caption>보도자료 리스트</caption>
+      <colgroup>
+       <col width="200px" /><col/>
+      </colgroup>
+      <tbody>
+      <tr>
+       <th scope="row">사용료</th>
+       <td>4시간 기준 / 100,000 (부가세 별도)</td>
+      </tr>
+      <tr>
+       <th scope="row">사용가능시간</th>
+       <td>평일 9:00 ~ 18:00</td>
+      </tr>
+      <tr>
+       <th scope="row">장비사용(공통)</th>
+       <td>
+        <ul class="li_th3">
+        <li>회의용 테이블 및 보조테이블, 사회자석</li>
+        <li>매립형 전동 스크린 (2300x1700), 4000ansi 프로젝터</li>
+        </ul>
+       </td>
+      </tr>
+      <tr>
+       <th scope="row">세미나실1</th>
+       <td>
+        <ul class="li_th3">
+        <li>회의좌석 22석, 보조자석 20석, 최대 42여석 가능</li>
+        <li>인터넷 노트북 2ea 연결가능, 유선마이크, 오디오 엠프등 제공</li>
+        </ul>
+       </td>
+      </tr>
+      <tr>
+       <th scope="row">세미나실2</th>
+       <td>회의좌석 18석, 보조좌석 4석</td>
+      </tr>
+      <tr>
+       <th scope="row">세미나실3</th>
+       <td>회의좌석 14석</td>
+      </tr>
+      <tr>
+       <th scope="row">문의</th>
+       <td>경영기획단 이은지 주임 042-479-4115</td>
+      </tr>
+      <tr>
+       <th scope="row">실내사진</th>
+       <td>
+        <ul class="conference_view">
+        <li>
+         <img src="/images/contents/sub03/conf_01.jpg" alt="세미나실 전경모습1" />
+         <span class="title">세미나실1</span>
+        </li>
+        <li>
+         <img src="/images/contents/sub03/conf_02.jpg" alt="세미나실 전경모습2" />
+         <span class="title">세미나실2</span>
+        </li>
+        <li>
+         <img src="/images/contents/sub03/conf_03.jpg" alt="세미나실 전경모습3" />
+         <span class="title">세미나실3</span>
+        </li>
+        </ul>
+       </td>
+      </tr>
+      </tbody>
+     </table>
+    </div>

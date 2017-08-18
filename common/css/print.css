@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/*-------------------------------------------------
+Author : hojeong Jin
+Create date : 2012. 03. 12.
+-------------------------------------------------*/
+
+
+@media print {
+	.title_area,
+	.title_area h2,
+	.title_area .close_modal,
+	.title_area .print,
+	.btn_group01,
+	#kier_logo,
+	#header,
+	#svisual,
+	#side,
+	#footer,
+	#location {
+		display: none;
+	}
+	#content  {
+		float: left;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	body, #wrap, #body_area  {
+		margin: 0;
+		padding: 0;
+		background: none;
+	}
+	body#body-type-01,
+	body#body-type-02,
+	body#body-type-03,
+	body#body-type-04,
+	body#body-type-05,
+	body#body-type-06,
+	body#body-type-07,
+	body#body-type-08 {
+		background: none;
+	}
+}

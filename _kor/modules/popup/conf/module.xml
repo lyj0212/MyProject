@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+
+	<name>팝업관리</name>
+
+	<section>
+		<title>팝업관리</title>
+		<date>2013-06-28</date>
+		<target>popup/popup/index</target>
+	</section>
+
+	<section>
+		<title>팝업존관리</title>
+		<date>2013-06-28</date>
+		<target>popup/popupzone/index</target>
+	</section>
+
+</module>

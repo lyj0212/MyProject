@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+
+	<name>메인페이지</name>
+
+	<permission>N</permission>
+
+	<section>
+		<title>관리자 메인페이지</title>
+		<date>2013-07-17</date>
+		<target>main/main/admin</target>
+	</section>
+
+	<section>
+		<title>국문 메인페이지</title>
+		<date>2013-07-17</date>
+		<target>main/main/korean</target>
+	</section>
+
+</module>

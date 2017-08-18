@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+
+	<name>첨부파일</name>
+
+	<permission>N</permission>
+
+	<section>
+		<title>첨부파일 관리</title>
+		<date>2013-01-25</date>
+		<target>attachment/manager/index</target>
+	</section>
+
+</module>

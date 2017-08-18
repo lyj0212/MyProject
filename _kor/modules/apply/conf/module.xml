@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+
+	<name>접수관리</name>
+	
+	<section>
+		<title>사업공고</title>
+		<date>2016-11-23</date>
+		<target>apply/bizannounce/index</target>
+		<grants>
+			<grant title="사업공고 목록보기" action="bizannounce.index" default="allow" />
+			<grant title="사업공고 상세보기" action="bizannounce.view" default="allow" />
+			<grant title="사업공고 신청하기" action="bizannounce.apply|bizannounce.save|bizannounce.submit|bizannounce.dupliacate_check" default="allow" />
+			<grant title="사업공고 미리하기" action="bizannounce.preview" default="allow" />
+		</grants>
+	</section>
+	
+	<section>
+		<title>나의접수현황</title>
+		<date>2016-11-23</date>
+		<target>apply/status/index</target>
+		<grants>
+			<grant title="사업접수현황 목록보기" action="status.index" default="allow" />
+			<grant title="사업접수현황 상세보기" action="status.view" default="allow" />
+			<grant title="사업접수현황 저장하기" action="status.modify|status.save|status.submit" default="allow" />
+		</grants>
+	</section>
+
+	<section>
+		<title>접수관리</title>
+		<date>2016-11-23</date>
+		<target>apply/manager/index</target>
+		<grants>
+			<grant title="페이지뷰" action="manager.index|manager.get_json_data" default="allow"  />
+			<grant title="상세보기" action="manager.view" default="allow" />
+			<grant title="등록하기" action="manager.write|manager.save|manager.delete" default="allow" />
+		</grants>
+	</section>
+</module>

@@ -1,0 +1,107 @@
+/* popup style */
+.title_area {background-color:#119ad1; min-height:16.42px; padding:15px 15px 8px 15px;}
+.title_area h2 { margin-top:8px; color:#fff; font-size:1.2em; font-weight:bold; }
+.title_area .print {margin:5px 20px 0 0; width:150px; text-align:right;}
+.editing {background-color:#f4f5f6; padding:18px 28px;}
+
+#pop_regist_decide {width:480px; padding:0 0 30px 0; background:#fff; }
+#pop_regist_decide .editing {background:#f4f5f6; padding:18px 28px;}
+#pop_regist_decide .editing select {width:65% !important; }
+#pop_regist_decide input[type="text"],
+#pop_regist_decide input[type="number"],
+#pop_regist_decide input[type="password"] {width:60% !important; }
+#pop_regist_decide select {width:80% !important; }
+#pop_regist_decide tfoot {background:#fbfbfb; font-weight:bold;}
+
+#pop_alert01 {width:250px; text-align:center; padding:25px 0 15px 0; border:3px solid #119ad1; background:#fff;}
+#pop_view_doc {overflow:auto; background:#fff; padding-bottom:30px; }
+#pop_view_doc .title_area {background:#119ad1; height:38px; padding:12px 20px 0 0;}
+#pop_view_doc .title_area h2 {padding:3px 0 12px 28px; color:#fff; font-size:1.2em; float:left; }
+#pop_view_doc .editing {background:#f4f5f6; padding:18px 28px;}
+#pop_view_doc .editing select {width:270px; }
+#pop_view_doc .date {border-bottom:1px solid #676975;}
+#pop_view_doc .name { color:#555; font-size:11px; }
+
+#pop_view_doc .tb_style .contents { padding:30px !important; }
+#pop_view_doc .tb_style .contents, #pop_view_doc .tb_style .contents td {text-align:left;}
+#pop_view_doc table { width:100% !important; }
+
+.pop_estimate {width:750px; overflow:hidden; background:#fff; padding-bottom:30px;}
+.pop_estimate .info_tb {clear:both; background:#f4f5f6; border-bottom:1px solid #c6c7cd; padding:29px 0 19px 0; overflow:hidden; }
+.pop_estimate .title_area h2 {padding:15px 0 0 28px; color:#fff; font-size:1.2em; float:left; line-height:1em;}
+.pop_estimate table {width:100%; border-top:2px solid #676975; }
+.pop_estimate table th,
+.pop_estimate table td {border-bottom:1px solid #e7e7ea; background:#fff;}
+.pop_estimate table th {padding:6px 12px 6px 28px; font-weight:normal; border-right:1px solid #d2d2d2; }
+.pop_estimate table td {padding:6px 9px; }
+.pop_estimate .estimate_info {width:340px; float:left; }
+.pop_estimate .company_info {width:400px; float:right; }
+.pop_estimate .estimate_info table {border-top:2px solid #e7e7ea; border-bottom:1px solid #676975;}
+.pop_estimate table .last {border-bottom:1px solid #676975;}
+.pop_estimate .company_info .company_name span {font-weight:bold; color:#252525; letter-spacing:-1px; display:inline-block; padding:0 10px; position:relative; }
+.pop_estimate .company_info .company_name {border-bottom:1px solid #676975; height:44px; }
+.pop_estimate .company_info .brdr_l {border-left:1px solid #d2d2d2; padding:6px 15px; text-align:center; }
+.pop_estimate .pop_stitle01 {color:#555; font-weight:bold; font-size:1.25em; letter-spacing:-1px; padding:28px 0 18px 28px; line-height:1em;}
+.pop_estimate .tb_estimate {width:100%; }
+.pop_estimate .tb_estimate th,
+.pop_estimate .tb_estimate td {border-right:1px solid #676975; text-align:center;}
+.pop_estimate .tb_estimate th {color:#707070; font-weight:bold; background:#fbfbfb; text-align:center; padding:6px 10px; }
+.pop_estimate .tb_estimate th.bg_none {background:none; }
+.pop_estimate .tb_estimate .brdr_r_gray {border-right:1px solid #e7e7ea; }
+.pop_estimate .tb_estimate tfoot td {color:#707070; font-weight:bold; text-align:right; }
+.pop_estimate .tb_estimate .num {text-align:right; }
+.pop_estimate .blank {border-bottom:1px solid #676975; height:10px; }
+.pop_estimate .tb_estimate .brdr_top {border-top:2px solid #676975;}
+
+#pop_certificate {width:100%;}
+#pop_certificate .certificate { border:5px solid #e1e1e1; padding:20px 25px 70px 25px;}
+#pop_certificate .certificate .num {padding:0 50px 10px 0; text-align:right; font-size:1.2em; font-weight:bold;}
+#pop_certificate .certificate h2 {padding:0 0 60px 100px; font-size:48px; letter-spacing:-2px; }
+#pop_certificate .certificate h2 span {border-top:7px solid #119ad1; display:inline-block; padding:52px 0 0 0;}
+#pop_certificate .certificate table {border-top:2px solid #676975; border-bottom:1px solid #676975; border-left:1px solid #676975; margin-bottom:30px; }
+#pop_certificate .certificate table td {padding:15px; border-right:1px solid #676975; border-bottom:1px solid #676975; }
+#pop_certificate .certificate table th {font-weight:bold; color:#707070; border-bottom:1px solid #676975; }
+#pop_certificate .certificate .txt_certificate {font-size:24px; letter-spacing:-2px; text-align:center; color:#000; padding-bottom:65px; }
+#pop_certificate .certificate .date {padding-left:118px; font-size:16px; padding-bottom:115px;}
+#pop_certificate .certificate .date span {font-size:20px; font-weight:bold; line-height:1.5em; letter-spacing:-1px; }
+#pop_certificate .certificate .sign_area {border-top:2px solid #676975; border-bottom:1px solid #676975; padding:28px 0; overflow:hidden; }
+#pop_certificate .certificate .sign_area .address {margin-bottom:15px; }
+#pop_certificate .certificate .sign_area p {text-align:right;}
+
+.pop_wrap {width:480px; padding:0 0 30px 0; background:#fff;  }
+
+#pop_view_list {width:750px; background:#fff; padding-bottom:30px; }
+#pop_view_list .editing p {font-size:14px; float:left; padding-right:20px;}
+
+/* 결산 */
+.account_info {background:#f4f5f6; border-bottom:1px solid #c6c7cd; padding:25px 0 18px 0; overflow:hidden;}
+.account_info p {padding:0 30px 5px 0; text-align:right; }
+.account_info table {border-top:2px solid #e7e7ea; width:370px; }
+.account_info table th {border-right:1px solid #e7e7ea; }
+.account_info table td {border-bottom:1px solid #e7e7ea; }
+
+.pop_estimate .tb_account {border-top:2px solid #676975; border-bottom:1px solid #676975; margin-top:5px; }
+.pop_estimate .tb_account th {border-bottom:1px solid #676975; border-right:1px solid #676975;; text-align:center; padding:6px 0; font-weight:bold; }
+.pop_estimate .tb_account td {border-bottom:1px solid #e7e7ea; border-right:1px solid #676975; text-align:center;}
+.pop_estimate .tb_account tfoot th,
+.pop_estimate .tb_account tfoot td {border-bottom:1px solid #676975; font-weight:bold; }
+
+/* 마일리지 */
+.mileage {background:#f4f5f6; padding:20px 0; }
+.mileage table {border-top:2px solid #e7e7ea ; background:#fff; width:100%;}
+.mileage table th,
+.mileage table td {border-right:1px solid #e7e7ea; border-bottom:1px solid #e7e7ea; padding:6px 10px;}
+.mileage table th {font-weight:normal;}
+.mileage table .num {color:#f3652e; text-align:right; }
+
+/* 탭메뉴 */
+.modal-body .tab_menu {background:url(/images/sub/bg_tabmn.gif) repeat-x 0 0; margin:20px 0; height:30px; padding:1px 30px;  }
+.modal-body .tab_menu li {float:left; position:relative; width:85px; text-align:center; border-right:1px solid #fff; }
+.modal-body .tab_menu li a {display:block; height:27px; line-height:30px;  border-top:1px solid #fff; border-right:1px solid #dcdfe2; color:#555;}
+.modal-body .tab_menu li.first {border-left:1px solid #dcdfe2; }
+.modal-body .tab_menu .on {height:29px; border:0;}
+.modal-body .tab_menu .on a {position:absolute; top:-1px; left:-1px; background:#119ad1;  border:1px solid #0884c5; font-weight:bold; color:#fff; width:99%; text-align:center; height:28px;}
+
+.percent02 {margin-left:10px; letter-spacing:0; float:left; font-weight:bold; }
+.rate {background:#ffd20a; height:7px; display:inline-block; }
+.graph {float:left; width:200px;}

@@ -1,0 +1,296 @@
+@charset "utf-8";
+/* Web Standardization Team, Author:JongWoon,LEE  2016.11.28 */
+
+/*주요사업_SW융합 및 R&D지원*/
+.swRND_wrap{display:block;position:relative}
+.swRND_wrap > .img{display:block;position:relative;margin-bottom:15px;text-align:center}
+/*주요사업_벤처창업 기업 성장지원, SW융합 인적자원 지원, 혁신 네트워크 지원*/
+.mainbiz_establish_wrap{display:block;position:relative}
+.mainbiz_establish_wrap h2{text-align:center;margin-bottom:15px;color:#666}
+.mainbiz_establish_wrap h3{margin-bottom:10px}
+.mainbiz_establish_wrap .indent{margin-left:18px}
+.mainbiz_establish_wrap .indent2{margin-left:30px}
+.mainbiz_establish_wrap > .li_th1{margin-bottom:10px}
+.mainbiz_establish_wrap > .li_th1 .mainbiz_proProce{margin-top:10px}
+.mainbiz_establish_wrap > .li_th1 .tablewrap{margin-top:10px}
+.mainbiz_establish_lst{display:block;position:relative;margin-bottom:30px}
+.mainbiz_establish_lst dl{display:block;position:relative;max-width:1015px;min-height:150px;padding:15px 0 15px 230px;margin:0 auto}
+.mainbiz_establish_lst dl + dl{margin-top:25px}
+.mainbiz_establish_lst dt{display:block;position:absolute;top:0;left:0}
+.mainbiz_establish_lst dt:after{display:block;position:absolute;top:50%;left:160px;width:40px;height:7px;margin-top:-4px;background:url(/images/contents/sub01/mainbiz_establish_dot.png) no-repeat;content:""}
+.mainbiz_establish_lst .no1 dt:after{background-position:0 0}
+.mainbiz_establish_lst .no2 dt:after{background-position:0 -7px}
+.mainbiz_establish_lst .no3 dt:after{background-position:0 -14px}
+.mainbiz_establish_lst dt > span{display:block;width:150px;height:150px;padding:40px 0;border-radius:50%;background:transparent;font-size:1.286em;line-height:1.2778em;color:#fff;letter-spacing:-0.02778em;text-align:center}
+.mainbiz_establish_lst .no1 dt > span{background:#f6a32c}
+.mainbiz_establish_lst .no2 dt > span{background:#5686cf}
+.mainbiz_establish_lst .no3 dt > span{background:#00857a}
+.mainbiz_establish_lst dd{display:block;padding:24px 60px;border:1px solid #c9cacc;border-radius:60px;background:#fbfbfc}
+.mainbiz_establish_lst .li_th2 > li{padding:6px 0 6px 10px;font-size:1.286em;line-height:1.444em}
+.mainbiz_establish_lst .li_th2.type1 > li{padding:25px 0 25px 10px}
+.mainbiz_establish_lst .li_th2 > li:after{top:18px;width:4px;height:4px}
+.mainbiz_establish_lst .li_th2.type1 > li:after{top:37px}
+.mainbiz_establish_lst .no1 .li_th2 > li:after{background:#f6a32c}
+.mainbiz_establish_lst .no2 .li_th2 > li:after{background:#5686cf}
+.mainbiz_establish_lst .no3 .li_th2 > li:after{background:#00857a}
+.mainbiz_establish_lst .no2.float .li_th2:after{clear:both;display:block;content:""}
+.mainbiz_establish_lst .no2.float .li_th2 > li{float:left;width:50%}
+.mainbiz_proProce{display:block;position:relative}
+.mainbiz_proProce > ol{display:block;overflow:hidden}
+.mainbiz_proProce > ol:after{clear:both;display:block;content:""}
+.mainbiz_proProce > ol > li{float:left;position:relative;min-height:123px;padding-right:56px}
+.mainbiz_proProce > ol > li:after{display:block;position:absolute;top:0;right:0;width:60px;height:100%;background:url(/images/contents/sub01/mainbiz_proProceArr.png) no-repeat 15px 50%;content:""}
+.mainbiz_proProce > ol > li.last{padding-right:0}
+.mainbiz_proProce > ol > li.last:after{display:none}
+.mainbiz_proProce span{display:block;width:134px;height:123px;padding-top:38px;background:url(/images/contents/sub01/mainbiz_proProcebg.png) no-repeat 50% 50%;font-size:1.071em;line-height:1.5333em;color:#037bc1;letter-spacing:-0.0333em;text-align:center}
+.mainbiz_proProce span > em{display:block;font-size:0.867em;line-height:1.7692em;color:#252525;letter-spacing:-0.03846em}
+.mainbiz_proProce span.threeline{padding-top:28px}
+.mainbiz_proProce span.fourline{padding-top:16px}
+.mainbiz_establish_wrap .btn_bizApply{display:block;position:absolute;top:-2px;right:0}
+.mainbiz_establish_wrap .btn_bizApply > a.btn{min-width:125px;background:#01906d !important}
+.mainbiz_establish_wrap .btn_bizApply > a.btn.btn-primary > span{background:#075948 !important;font-size:1.214em;line-height:1.1764em}
+.mainbiz_establish_wrap .btn_bizApply > a.btn > span[class*="icon-"]:before{line-height:1.1764em}
+/*사업공고*/
+.bizNotify_wrap{display:block;position:relative;margin:0 0 15px}
+.bizNotify_info{display:block;position:relative;margin:0;padding-left:120px;background:url(/images/common/bizNotify_info_bg.png) no-repeat 10px 50%}
+.bizNotify_info:after{clear:both;display:block;content:""}
+.bizNotify_info > dt,.bizNotify_info > dd{display:block;float:left;position:relative;font-size:1.143em;line-height:1.625em;letter-spacing:-0.03125em}
+.bizNotify_info > dt{padding-left:10px;font-weight:700;color:#147860;text-align:justify;white-space:nowrap}
+.bizNotify_info > dt:after{display:block;position:absolute;top:13px;left:0;width:4px;height:4px;border-radius:50%;background:#147860;content:""}
+.bizNotify_info > dd{float:none;margin-left:85px;color:#333}
+.bizNotify_info > dd strong{display:block;font-weight:700;line-height:1.625em;color:#147860;text-decoration:underline}
+
+
+/*시설소개*/
+/*시설소개 전경*/
+.facilities_wrap{display:block;position:relative}
+.facilities_frontview{position:relative;height:600px;background:url(/images/contents/sub03/facilities_01.jpg) no-repeat}
+.facilities_frontview .title{display:block;position:absolute;bottom:0;right:0;width:480px;padding:20px 84px;text-align:center}
+.facilities_frontview .title:before{display:block;position:absolute;bottom:0;right:0;width:100%;height:100%;background:#333;opacity:0.5;filter:alpha(opacity=50);content:""}
+.facilities_frontview .title > span{display:block;position:relative;font-size:2.000em;line-height:1.07142em;color:#fff}
+/*시설들*/
+.facilities{clear:both;display:block;position:relative;margin-top:40px}
+.facilities > ul{display:block;position:relative;overflow:hidden;margin-top:-40px}
+.facilities > ul:before{display:block;position:absolute;top:40px;left:50%;width:1px;height:100%;background:#eee;content:""}
+.facilities > ul:after{clear:both;display:block;content:""}
+.facilities > ul > li{float:left;margin-top:40px}
+.facilities > ul > li.even{float:right}
+.facilities_capt{display:block;position:relative;max-width:528px;background:#eee}
+.facilities_capt > .img,.facilities_capt > .caption{display:block}
+.facilities_capt > .caption{padding:27px 25px}
+.facilities_capt > .caption > strong{display:block;position:relative;margin:0 0 10px;padding-left:12px;font-weight:700;font-size:1.143em;line-height:1.625em;color:#555;letter-spacing:-0.03125em}
+.facilities_capt > .caption > strong:after{display:block;position:absolute;top:7px;left:0;width:7px;height:12px;background:#4a9784;content:""}
+.facilities_capt > .caption > .li_th2 > li{margin-top:5px}
+/*회의실 사진*/
+.conference_wrap{display:block;position:relative;margin-top:10px}
+.conference_view{display:block;position:relative}
+.conference_view:after{clear:both;display:block;content:""}
+.conference_view li{float:left;padding:10px 30px}
+.conference_view li img{display:block}
+.conference_view li span.title{display:block;padding-top:10px;text-align:center}
+
+
+/*사업단소개*/
+/*SW융합클러스터*/
+.cluster_wrap{display:block;position:relative;width:1110px;height:885px;margin:0 auto;background:url(/images/contents/sub06/cluster_bg.png) no-repeat 50% 0}
+.cluster_wrap .cluster_info{display:block;position:absolute;top:0;left:0;width:390px;min-height:205px;padding:25px 20px}
+.cluster_wrap .cluster_info.incheon{top:75px}
+.cluster_wrap .cluster_info.daejeon{top:288px}
+.cluster_wrap .cluster_info.jeonbuk{top:525px}
+.cluster_wrap .cluster_info.jeonnam{top:747px;left:265px;min-height:60px;padding:17px 20px}
+.cluster_wrap .cluster_info.pankyo{top:0;left:auto;right:112px}
+.cluster_wrap .cluster_info.daegu{top:220px;left:auto;right:9px}
+.cluster_wrap .cluster_info.pohang{top:440px;left:auto;right:0}
+.cluster_wrap .cluster_info.busan{top:675px;left:auto;right:49px}
+.cluster_wrap .cluster_info > strong{display:block;position:relative;padding-left:140px;background:no-repeat 0 50%;font-size:1.214em;line-height:1.5294em;color:#333;letter-spacing:-0.04411em}
+.cluster_wrap .cluster_info > strong:after{display:block;position:absolute;top:5px;left:131px;width:1px;height:17px;background:#6c6d70;content:""}
+.cluster_wrap .cluster_info.incheon > strong{background-image:url(/images/contents/sub06/cluster_logo04.jpg)}
+.cluster_wrap .cluster_info.daejeon > strong{background-image:url(/images/contents/sub06/cluster_logo07.jpg)}
+.cluster_wrap .cluster_info.jeonbuk > strong{background-image:url(/images/contents/sub06/cluster_logo06.jpg)}
+.cluster_wrap .cluster_info.jeonnam > strong{background-image:url(/images/contents/sub06/cluster_logo08.jpg)}
+.cluster_wrap .cluster_info.pankyo > strong{background-image:url(/images/contents/sub06/cluster_logo03.jpg)}
+.cluster_wrap .cluster_info.daegu > strong{background-image:url(/images/contents/sub06/cluster_logo01.jpg)}
+.cluster_wrap .cluster_info.pohang > strong{background-image:url(/images/contents/sub06/cluster_logo05.jpg)}
+.cluster_wrap .cluster_info.busan > strong{background-image:url(/images/contents/sub06/cluster_logo02.jpg)}
+.cluster_wrap .cluster_info .li_th1{margin-top:20px}
+/*사업단소개*/
+.clusterInc_wrap{display:block;position:relative}
+.clusterInc_wrap > dl{display:block;position:relative;margin:0}
+.clusterInc_wrap > dl > dt,.clusterInc_wrap > dl > dd{font-size:1.286em;line-height:1.5556em;color:#555;letter-spacing:-0.0416667em}
+.clusterInc_wrap > dl > dt{float:left;position:relative;padding-left:18px;font-weight:700}
+.clusterInc_wrap > dl > dt:after{display:block;position:absolute;top:7px;left:0;width:13px;height:13px;border-radius:50%;border:3px solid #308671;content:""}
+.clusterInc_wrap > dl > dd{display:block;position:relative;margin-left:100px}
+.clusterInc_wrap > dl > dt.outline{display:block;float:none}
+.clusterInc_wrap > dl > dd.outline{margin-left:18px;font-size:1em}
+.clusterInc_wrap .clusterInc_location{display:block;position:relative;max-width:1010px;margin:0 auto 20px}
+.clusterInc_location .location_info{display:block;position:absolute;width:290px;min-height:95px;padding:5px 10px;margin:0}
+.clusterInc_location .location_info.valley{top:124px;right:3px}
+.clusterInc_location .location_info.complex{top:430px;right:36px}
+.clusterInc_location .location_info.park{bottom:3px;left:277px}
+.clusterInc_location .location_info > dt,.clusterInc_location .location_info > dd{display:block}
+.clusterInc_location .location_info > dt{font-weight:700;font-size:1.214em;line-height:1.7647em;letter-spacing:-0.0294117em}
+.clusterInc_location .location_info.valley > dt{color:#ad5107}
+.clusterInc_location .location_info.complex > dt{color:#185389}
+.clusterInc_location .location_info.park > dt{color:#0b603d}
+/*추진목적*/
+.purpose_wrap{display:block;position:relative;max-width:820px;margin:0 auto}
+.purpose_wrap .purpose{display:block;position:relative;min-height:112px;margin:0 0 20px}
+.purpose_wrap .purpose dt{float:left;width:146px;height:112px;padding:40px 26px 0 0;background:no-repeat 50% 50%;font-size:1.429em;line-height:1.5em;color:#fff;letter-spacing:0;text-align:center}
+.purpose_wrap .purpose dd{display:block;position:relative;margin-left:200px;padding:26px 0;font-size:1.429em;line-height:1.5em;color:#555;letter-spacing:-0.0375em}
+.purpose_wrap .purpose.no1 dt{background-image:url(/images/contents/sub06/purpose_t01.png)}
+.purpose_wrap .purpose.no2 dt{background-image:url(/images/contents/sub06/purpose_t02.png)}
+.purpose_wrap .purpose.no3 dt{background-image:url(/images/contents/sub06/purpose_t03.png)}
+.purpose_wrap .purpose.no1 dd{padding:41px 0}
+.purpose_wrap .purpose.no1 dd span{color:#189694}
+.purpose_wrap .purpose.no2 dd span{color:#699509}
+.purpose_wrap .purpose.no3 dd span{color:#8c5295}
+.purpose_wrap .basic_box{margin:40px 0 20px;border-radius:15px}
+/*비전 및 파급효과*/
+.vision_wrap{display:block;position:relative}
+.vision_wrap h2{display:block;position:relative;max-width:830px;padding:15px 20px;margin:0 auto;border:1px solid #c9cacc;border-radius:33px;background:#fbfbfc}
+.vision_wrap h2 span{display:block;line-height:1.4em}
+.vision_wrap .bizGoal_wrap{display:block;position:relative;overflow:hidden;margin:25px 0 50px;background:url(/images/contents/sub06/bizGoal_arrow.png) no-repeat 50% 190px}
+.bizGoal_wrap > ul{display:block;max-width:1144px;margin:0 -7px}
+.bizGoal_wrap > ul:after{clear:both;display:block;content:""}
+.bizGoal_wrap > ul > li{float:left;margin:0 20px}
+.bizGoal_wrap .bizGoal{display:block;position:relative;width:246px;padding-top:255px;margin:0;background:url(/images/contents/sub06/bizGoal_img.png) no-repeat}
+.bizGoal_wrap .bizGoal > dt{display:block;position:absolute;top:0;left:0;width:113px;height:113px;padding-top:29px;font-weight:700;font-size:1.429em;line-height:1.4em;color:#fff;letter-spacing:-0.0375em;text-align:center}
+.bizGoal_wrap .bizGoal > dd{display:block}
+.bizGoal_wrap .bizGoal .bizGoal_desc{display:block;max-width:238px;min-height:130px;padding:20px;margin:0 auto;border-radius:10px;background:#d5f6ff;font-size:1.286em;line-height:1.5556em;color:#484848;letter-spacing:-0.02778em;text-align:center}
+.bizGoal_wrap .bizGoal .bizGoal_desc strong{display:block;margin-bottom:10px;font-weight:400}
+.bizGoal_wrap .bizGoal .bizGoal_desc .desc{display:block;font-weight:700;line-height:1.333em;color:#3a9781}
+.bizGoal_wrap .no1 .bizGoal{background-position:0 0}
+.bizGoal_wrap .no2 .bizGoal{background-position:-250px 0}
+.bizGoal_wrap .no3 .bizGoal{background-position:-500px 0}
+.bizGoal_wrap .no4 .bizGoal{background-position:-750px 0}
+.bizGoal_wrap .no1 .bizGoal > dt{left:16px}
+.bizGoal_wrap .no2 .bizGoal > dt{left:2px}
+.bizGoal_wrap .no3 .bizGoal > dt{left:4px}
+.bizGoal_wrap .no4 .bizGoal > dt{left:21px}
+/*조직도_직원안내*/
+.orgar_map{display:block;position:relative;padding:40px 0;border:1px solid #e7e7e7;text-align:center}
+.orgar_mapTxt_wrap{display:block;position:relative;padding:40px 0 0}
+.orgar_mapTxt_wrap:after{clear:both;display:block;content:""}
+.orgar_mapTxt{display:block;float:left;width:226px;padding:0 13px}
+.orgar_mapTxt dl{display:block;margin:0}
+.orgar_mapTxt dt,.orgar_mapTxt dd{display:block;padding:10px 0;background:#eee}
+.orgar_mapTxt dt{background:#1b8b86;border-radius:7px 7px 0 0;font-weight:700;font-size:1.143em;color:#fff;letter-spacing:-0.03125em;text-align:center}
+.orgar_mapTxt dd{min-height:290px;padding-left:12px;border-radius:0 0 7px 7px}
+.orgar_mapTxt dd ul,.orgar_mapTxt dd li{display:block}
+.orgar_mapTxt dd li{padding:5px 0 5px 10px}
+.orgar_mapTxt dd .li_th1 > li:after{top:5px}
+/*찾아오시는길*/
+.location_add{display:block;margin:10px 0 30px 0}
+.location_car{display:block;margin:5px 0 0 30px;color:#666}
+.lacation_mapWrap{display:block;position:absolute;top:0;right:0;margin:0 0 20px 0;width:580px;height:440px;background:#eee;border:1px solid #ddd}
+.location_trafficWrap{display:block;position:relative;margin-top:10px}
+
+
+/*로그인 및 회원가입*/
+/*로그인*/
+.login_member_wrap{display:block;position:relative;width:611px;margin:0 auto 60px}
+.login_member_wrap > h1{display:block;padding:120px 0 0 !important;margin-bottom:25px !important;background:url(/images/common/login_iconbg.png) no-repeat 50% 0;text-align:center}
+.login_member_wrap.memJoin > h1{padding-top:100px !important;background-image:url(/images/common/memjoin_iconbg.png)}
+/*하단버튼(다음단계)*/
+.login_member_wrap .btn_wrap{display:block;position:relative;margin-top:30px}
+/*로그인 폼*/
+.login_member_frm{display:block}
+.login_member_frm > h2{margin-bottom:10px}
+.login_member_frm .login_member{display:block;position:relative}
+/*로그인 실패 시 메시지*/
+.login_member_frm .loginfail_messg{display:none;padding:0 0 15px;text-align:center}
+.login_member_frm .loginfail_messg.active{display:block}
+.login_member_frm .loginfail_messg strong{display:block;font-weight:400;font-size:1.286em;line-height:1.5556em;color:#dd4b39;letter-spacing:-0.0416667em}
+.login_member_frm .loginfail_messg .txtp{display:block;margin:0;font-size:1em;line-height:1.42857em;color:#555;letter-spacing:-0.03571em}
+.login_member_frm .caution{margin-top:15px}
+/*로그인*/
+.login_member_frm .login_wrap{display:block;position:relative;padding:20px 10px;border-top:2px solid #377163;border-bottom:1px solid #c1c5cd}
+.login_wrap .item{display:block;position:relative;height:45px;padding:5px 0 5px 115px}
+.login_wrap .item .i_label,.login_wrap .item .i_text{margin:0;font-size:1.071em !important;line-height:2.333em;letter-spacing:-0.03333em}
+.login_wrap .item .i_label{position:absolute;top:5px;left:0;color:#3c4250}
+.login_wrap .item .i_text{display:block;width:100%;height:35px;padding:5px 7px;border-radius:3px !important;font-size:1.071em;line-height:1.5333em;color:#333}
+.login_wrap .item.keepId{height:40px}
+.login_wrap .item.keepId:after{clear:both;display:block;content:""}
+.login_wrap .item .checkbox{float:left;padding:5px 0}
+.login_wrap .item .login_menu{float:right;position:relative;margin:0}
+.login_wrap .item .login_menu:after{display:block;position:relative;top:8px;left:50%;width:1px;height:14px;margin-left:-1px;background:#c1c5cd;content:""}
+.login_wrap .item .login_menu a.help_btn{float:left;width:85px;height:30px;padding:5px 0;line-height:1.42857em;text-align:center}
+.login_wrap .item .login_menu a.help_btn:hover,.login_wrap .item .login_menu a.help_btn:active,.login_wrap .item .login_menu a.help_btn:focus{color:#147860}
+.login_wrap .item .login_menu a.help_btn + a.help_btn{margin-left:6px}
+.login_wrap .item .login_menu a.help_btn > span:before{margin-right:5px}
+.login_wrap .loginBtn{display:block;position:relative;margin:10px 0 0 115px}
+.login_wrap .loginBtn .btn{min-width:100%}
+.login_wrap .loginBtn .btn > span{font-weight:700;font-size:1.143em;line-height:1.5em}
+/*레이어팝업 - 계정찾기*/
+.emailSCH_wrap .modalPopup_wrap.modal-dialog{max-width:500px}
+.emailSCH_wrap .login_member_frm .loginfail_messg{padding-top:0}
+.emailSCH_wrap .login_member_frm .loginfail_messg strong{color:#333}
+.emailSCH_wrap .login_member_frm .loginfail_messg strong em{font-weight:700;line-height:1.5556em;color:#dd4b39}
+/*회원가입 약관동의*/
+.termsAgree_frm{display:block;position:relative}
+.termsAgree_wrap{display:block;position:relative;margin-top:40px}
+.termsAgree_wrap > h2{margin-bottom:10px}
+.termsAgree_wrap h3,.termsAgree_wrap h4,.termsAgree_wrap h5{padding:0;margin:0;font-weight:700;font-size:1.143em;line-height:1.625em;letter-spacing:-0.03125em}
+.termsAgree_wrap h3:after,.termsAgree_wrap h4:after,.termsAgree_wrap h5:after{display:none}
+.termsAgree_wrap h3 ~ h3{margin-top:30px}
+.termsAgree_wrap h4{margin-top:20px}
+.termsAgree_wrap h3 + h4{margin-top:10px}
+.termsAgree_wrap .basic_box{border-color:#c2c5ca;background:#fff}
+.termsAgree_wrap .txtp{display:block;margin-bottom:0;font-weight:400;font-size:1em;line-height:1.42857em;color:#555;letter-spacing:-0.03571em}
+.termsAgree_wrap .li_num > li{margin-top:5px}
+.termsAgree_wrap .li_th2{margin-bottom:5px}
+.termsAgree_wrap .li_th2 > li{font-size:0.929em;line-height:1.5384em;color:#767676;letter-spacing:-0.03846em}
+.termsAgree_wrap .txtp > .li_th2{margin-left:15px}
+.termsAgree_wrap .add_clause{margin-top:25px}
+.termsAgree_wrap a:hover,.termsAgree_wrap a:active,.termsAgree_wrap a:focus{color:#4a9784}
+.termsAgree_wrap div[id*="personal_info"]{margin-top:20px}
+.termsAgree_wrap div[id*="personal_info"] > strong{display:block;margin-bottom:10px}
+.termsAgree_wrap div[id*="personal_info"] > ul{display:block;position:relative}
+.termsAgree_wrap div[id*="personal_info"] > ul > li{margin-top:10px}
+.termsAgree_wrap div[id*="personal_info"] li .li_th2{margin-left:15px}
+.termsAgree_wrap div[id*="personal_info"] li .li_th3{margin-bottom:5px}
+/*동의*/
+.terms_yn_clause{display:block;position:relative;padding:10px 0;margin:5px 0 10px;background:#f7fcfb}
+.terms_yn_clause:after{clear:both;display:block;content:""}
+.terms_yn_clause .radio,.terms_yn_clause .checkbox{display:block;position:relative;padding:0 25px;text-align:right}
+.terms_yn_clause strong{float:left;margin-right:35px;font-weight:700;font-size:1em;line-height:1.42857em;color:#252525;vertical-align:top}
+/*회원가입 개인정보입력*/
+.login_member_frm.memJoinInfo_ipt{margin-top:40px}
+.memJoinInfo_ipt .item.redund_chk{padding-right:80px}
+.memJoinInfo_ipt .item.redund_chk > .btn{display:block;position:absolute;top:5px;right:0;height:35px;padding:6px 10px;border-radius:3px !important}
+/*회원가입 가입완료*/
+.login_member_frm.memJoinInfoComp{margin-top:40px;text-align:center}
+.memJoinInfoComp .txtp em{display:block}
+.memJoinInfoComp .joinemail_confirm{display:block;position:relative;padding:150px 0 25px;margin-top:75px;border-bottom:1px solid #c1c5cd;background:url(/images/common/memjoincomp_iconbg.png) no-repeat 50% 0}
+.memJoinInfoComp .joinemail_confirm > .txtp{display:block;font-weight:700;font-size:1.286em;line-height:1.5556em;color:#333}
+/*이메일인증*/
+.emailCertify{height:100%;min-height:100%}
+
+/*마이페이지*/
+/*정보이관*/
+.transfer_wrap{display:block;position:relative;max-width:960px;margin:0 auto;padding:0 19px}
+.transfer_wrap > h2{text-align:center}
+.transfer_wrap > h2 em{display:block;font-size:0.720em;line-height:1.5556em;color:#333;letter-spacing:-0.041667em}
+.transfer_wrap .platform_intro{display:block;margin:30px -19px 20px}
+.transfer_wrap .platform_intro:after{clear:both;display:block;content:""}
+.transfer_wrap .platform_intro > li{float:left;padding:0 19px}
+.transfer_wrap .platform_intro .thumb{display:block;position:relative;width:282px;padding-top:180px;background:no-repeat 50% 0}
+.transfer_wrap .platform_intro .thumb.hope_platform{background-image:url(/images/contents/sub07/platform_intro_img01.png)}
+.transfer_wrap .platform_intro .thumb.human_platform{background-image:url(/images/contents/sub07/platform_intro_img02.png)}
+.transfer_wrap .platform_intro .thumb.schedule_platform{background-image:url(/images/contents/sub07/platform_intro_img03.png)}
+.transfer_wrap .platform_intro strong{display:block;font-size:1.071em;line-height:1.6667em;color:#252525;letter-spacing:-0.0333em}
+.transfer_wrap .platform_intro .txtp{display:block;max-width:240px;margin-top:5px;font-size:0.929em;line-height:1.5384em;color:#6c6d70;letter-spacing:-0.03846em}
+.transfer_wrap .basic_box{border-radius:7px}
+.transfer_wrap .checkbox{margin:10px 0 20px}
+.transfer_wrap .checkbox span > a{color:#333}
+.transfer_wrap .checkbox span > a:hover,.transfer_wrap .checkbox span > a:active,.transfer_wrap .checkbox span > a:focus{color:#147860}
+.transfer_wrap .btn_wrap{margin-top:20px}
+.transfer_wrap .btn_wrap .btn.btn-lg{min-width:175px}
+.transfer_wrap.platformsvc .btn_wrap .btn.btn-lg{min-width:245px}
+
+
+/*모달윈도우*/
+.termsAgreeChk_wrap{}
+.termsAgreeChk_wrap .modal-dialog{width:580px}
+.termsAgreeChk_wrap .termsAgree_wrap{margin:0 0 20px}
+.termsAgreeChk_wrap.modal .modalPopup_wrap .modal-body .btn.btn-primary{min-width:100px}

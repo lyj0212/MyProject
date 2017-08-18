@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<title>현대 SDI 발주시스템</title>
+<!-- 기본 -->
+<link rel="stylesheet" type="text/css" href="/_res/libs/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/_res/libs/jquery/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="/_res/css/theme.css" />
+<link rel="stylesheet" type="text/css" href="/_res/css/iSmartCode.css" />
+<link rel="stylesheet" type="text/css" href="/_res/css/project.css" />
+<link rel="stylesheet" type="text/css" href="/_res/css/font_notosans.css" />
+<link rel="stylesheet" type="text/css" href="/_res/font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="/_res/fontello/css/fontello.css" />
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" />  
+<link rel="stylesheet" type="text/css" href="/_res/css/docs_animate.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="/_res/libs/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="/_res/js/jquery-ui.custom.js"></script>
+<script type="text/javascript" src="/_res/js/modernizr-2.6.2.min.js"></script>
+<!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<!-- //기본 -->
+<link rel="stylesheet" type="text/css" href="/_res/css/cms_layout.css" />
+<link rel="stylesheet" type="text/css" href="/_res/css/docs_cmpt.css" />
+<link rel="stylesheet" type="text/css" href="/_res/css/cms_cmpt.css" />
+<link rel="stylesheet" type="text/css" href="/_res/css/cms_main.css" />
+<script type="text/javascript" src="/js/script_common.js"></script>
+<script type="text/javascript" src="/js/script_main.js"></script>
+<link sizes="144x144" rel="apple-touch-icon-precomposed" href="/images/ico/apple-touch-icon-144-precomposed_cms.png" />
+<link sizes="72x72" rel="apple-touch-icon-precomposed" href="/images/ico/apple-touch-icon-72-precomposed_cms.png" />
+<link rel="apple-touch-icon-precomposed" href="/images/ico/apple-touch-icon-57-precomposed_cms.png" />
+<link rel="shortcut icon" href="/images/ico/favicon_cms.ico" />
+</head>
+<body>
+<div class="skip">
+	<a href="#content">본문컨텐츠 바로가기</a>
+</div>
+
+<div id="wrap">
+	<!-- header -->
+	<header id="header">
+	  <div class="header_wrap">
+		<h1 class="logo"><a href="/">현대 SDI 발주시스템</a></h1>
+		<div class="tside_wrap" >
+		  <ul>
+			<li><a href="#nav_wing" class="btn_totalMenu"><span class="icon no01">전체메뉴</span></a></li>
+			<li><a href="<?php if($this->account->is_logged()) {echo $this->link->get(array('prefix'=> 'myinfo', 'module'=>NULL,'controller'=>NULL, 'action'=>NULL, 'id'=>NULL, 'pid'=>NULL)); } else {echo $this->link->get(array('prefix'=>'join','module' => NULL,'controller'=>NULL, 'action'=>NULL, 'id'=>NULL, 'pid'=>NULL));} ?>"><span class="icon no02">회원가입</span></a></li>
+			<li><a href="<?php if($this->account->is_logged()) {echo $this->link->get(array('module'=>'member','controller'=>'accounts', 'action'=>'logout', 'id'=>NULL, 'pid'=>NULL)); } else {echo $this->link->get(array('prefix'=>'login','module' => NULL,'controller'=>NULL, 'action'=>NULL, 'id'=>NULL, 'pid'=>NULL));} ?>"><span class="<?php if($this->account->is_logged()) {echo 'icon no05';} else {echo 'icon no03';} ?>">로그인</span></a></li>
+			<li><a href="#totalSCH" class="btn_totalSch"><span class="icon no04">검색</span></a></li>
+		  </ul>
+		  <div id="totalSCH" class="totalsearch">
+			<div class="totalsearch_wrap">
+			  <div class="totalsearch_arrow"></div>
+			  <fieldset>
+				<legend>통합검색</legend>
+				<?php echo form_open($this->link->get(array('action'=>'convert'),TRUE), array('class'=>'')); ?>
+				<input type="hidden" name="redirect" value="<?php echo $this->link->get(array('module'=>'search', 'controller'=>'search', 'action'=>'index', 'q'=>NULL, 'search_keyword'=>NULL, 'page'=>NULL, 'id'=>NULL, 'pid' => NULL),TRUE); ?>" />
+				<div class="search">
+				  <label for="search_keyword_q" class="hide">검색어 입력</label>
+				  <input type="text" class="form-control" name="q" id="search_keyword_q" value="<?php echo get_field('q'); ?>" title="검색어 입력" placeholder="검색할 내용을 입력하세요" />
+				  <span class="btn_search"><button class="btn btn-primary" type="submit">검색</button></span>
+				  <span class="btn_close"><button class="btn btn-default" type="button">닫기</button></span>
+				</div>
+				</form>
+			  </fieldset>
+			</div>
+		  </div>
+		</div>
+		<nav id="gnavigation">
+		  <h2 class="hide">글로벌메뉴</h2>
+		  <ul class="gnb">
+			<?php echo $topmenu; ?>
+		  </ul>
+		</nav>
+	  </div>
+	</header>
+  
+	<nav id="nav_wing" class="nav_wing">
+		<div class="wing_gnb">
+			<ul class="wing_menu">
+				<?php echo $topmenu; ?>
+			</ul>
+			<p class="btn_close"><a href="#">GNB 전체메뉴 닫기</a></p>
+		</div>
+		<div class="wing_mask"></div>
+	</nav>
+  
+	<hr/>
+  
+	<div id="body" class="container main">	  
+	  <section id="content">		
+		<article id="detail_content">
+		  <!-- 본문 컨텐츠 영역 -->
+		  <?php echo $content_for_layout; ?>
+		  <!-- //본문 컨텐츠 영역 -->
+		</article>
+	  </section>
+	</div>
+	<hr/>
+	<!-- footer -->
+	<footer id="footer">
+		<div class="banner_wrap">
+			<div class="banner_lstwrap">
+				<ul class="banner_lst">
+				<li><a href="http://www.daejeon.go.kr/" target="_blank" title="새창에서 열림"><img src="/images/footer/bann_01.jpg" alt="대전광역시" /></a></li>
+				<li><a href="http://www.mcst.go.kr/index.jsp" target="_blank" title="새창에서 열림"><img src="/images/footer/bann_02.jpg" alt="문화체육관광부" /></a></li>
+				<li><a href="http://www.kocca.kr/" target="_blank" title="새창에서 열림"><img src="/images/footer/bann_03.jpg" alt="한국콘텐츠진흥원" /></a></li>
+				<li><a href="http://www.acrc.go.kr/" target="_blank" title="새창에서 열림"><img src="/images/footer/bann_04.jpg" alt="국민권익위원회" /></a></li>
+				<li><a href="http://www.difv.co.kr/" target="_blank" title="새창에서 열림"><img src="/images/footer/bann_05.jpg" alt="대전독립영화협회" /></a></li>
+				<li><a href="http://www.gdca.or.kr/" target="_blank" title="새창에서 열림"><img src="/images/footer/bann_06.jpg" alt="경기콘텐츠진흥원" /></a></li>
+				<li><a href="http://www.inis.or.kr/" target="_blank" title="새창에서 열림"><img src="/images/footer/bann_07.jpg" alt="인천정보산업진흥원" /></a></li>
+				<li><a href="http://www.gimc.or.kr/" target="_blank" title="새창에서 열림"><img src="/images/footer/bann_08.jpg" alt="강원정보문화진흥원" /></a></li>
+				<li><a href="http://www.ctia.kr/" target="_blank" title="새창에서 열림"><img src="/images/footer/bann_09.jpg" alt="충남문화산업진흥원" /></a></li>
+				<li><a href="http://www.cjculture.org/" target="_blank" title="새창에서 열림"><img src="/images/footer/bann_10.jpg" alt="청주시문화산업진흥재단" /></a></li>
+				<li><a href="https://jica.kr/" target="_blank" title="새창에서 열림"><img src="/images/footer/bann_11.jpg" alt="전주정보문화산업진흥원" /></a></li>
+				<li><a href="http://www.dip.or.kr/" target="_blank" title="새창에서 열림"><img src="/images/footer/bann_12.jpg" alt="대구디지털산업진흥원" /></a></li>
+				<li><a href="http://www.gitct.or.kr/" target="_blank" title="새창에서 열림"><img src="/images/footer/bann_13.jpg" alt="광주정보문화산업진흥원" /></a></li>
+				<li><a href="http://www.busanit.or.kr/" target="_blank" title="새창에서 열림"><img src="/images/footer/bann_14.jpg" alt="부산정보산업진흥원" /></a></li>
+				<li><a href="http://www.msip.go.kr/" target="_blank" title="새창에서 열림"><img src="/images/footer/bann_15.jpg" alt="미래창조과학부" /></a></li>
+				<li><a href="http://www.djfc.co.kr/" target="_blank" title="새창에서 열림"><img src="/images/footer/bann_16.jpg" alt="대전영상위원회" /></a></li>
+				<li><a href="http://www.moiba.or.kr/" target="_blank" title="새창에서 열림"><img src="/images/footer/bann_17.jpg" alt="(사)한국무선인터넷산업연합회" /></a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="siteinfo_wrap">
+			<h1 class="f_logo">D-CUBE(D3) 클러스터 플랫폼</h1>
+			<div class="siteinfo">
+				<adress class="address">(34126) 대전광역시 유성구 대덕대로 512번길 <span>전화번호 : 042-479-41149(평일) / 042-479-4116(평일)</span> <span>팩스 : 042-479-4125</span></adress>
+				<copyright class="copyright">Copyright &copy;  DICA  All Rights Reserved.</copyright>
+			</div>
+		</div>
+	</footer>
+	<!-- //footer -->
+</div>
+</body>
+</html>

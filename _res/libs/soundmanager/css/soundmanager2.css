@@ -1,0 +1,58 @@
+#sm2-container{position:absolute;left:-999px;top:-999px;}
+.spectrum-container{display:none;}
+ul.use-spectrum li.sm2_playing .spectrum-container{position:absolute;left:0px;top:0px;margin-left:-266px;margin-top:-1px;display:block;background-color:#5588bb;border:1px solid #99ccff;border-radius:4px;}
+ul.use-spectrum .spectrum-box{position:relative;width:255px;font-size:1em;padding:2px 0px;height:1.2em;overflow:hidden;}
+ul.use-spectrum .spectrum-box .spectrum{position:absolute;left:0px;top:-2px;margin-top:20px;display:block;font-size:1px;width:1px;height:1px;overflow:hidden;background-color:#fff;}
+ul.attachment{list-style-type:none;margin:0px;padding:0px;}
+ul.attachment li{position:relative;display:block;width:auto;}
+ul.attachment li>a{outline:none;position:relative;z-index:2;}
+ul.attachment li.sm2_playing,
+ul.attachment li.sm2_paused,
+ul.attachment li.sm2_playing>a{color:#fff;border-radius:3px;}
+ul.attachment li.sm2_playing .file_size,
+ul.attachment li.sm2_paused .file_size{color:#ddd;}
+ul.attachment li.sm2_playing,
+ul.attachment li.sm2_playing:hover{background-color:#6699cc;}
+ul.attachment li.sm2_paused{background-color:#999;}
+ul.attachment li.sm2_playing:hover>a,
+ul.attachment li.sm2_paused>a{color:#fff;}
+ul.attachment li .controls{display:none;}
+ul.attachment li .peak,
+ul.attachment.use-peak li .peak{display:none;position:absolute;top:0.55em;right:0.5em;}
+ul.attachment li.sm2_playing .controls,
+ul.attachment li.sm2_paused .controls{position:relative;display:block;}
+ul.attachment.use-peak li.sm2_playing .peak,
+ul.attachment.use-peak li.sm2_paused .peak{display:inline;display:inline-block;}
+ul.attachment.use-peak li .peak{display:none;}
+ul.attachment li.sm2_paused .controls{background-color:#666;}
+ul.attachment li:hover .controls .statusbar{position:relative;cursor:ew-resize;cursor:-moz-grab;cursor:grab;}
+ul.attachment li.sm2_paused .controls .statusbar{background-color:#ccc;}
+ul.attachment li .controls{position:relative;margin-top:0.25em;margin-bottom:0.25em;background-color:#99ccff;}
+ul.attachment li .controls .statusbar{position:relative;height:0.5em;background-color:#ccddff;border:2px solid #fff;border-radius:2px;overflow:hidden;cursor:-moz-grab;cursor:grab;}
+ul.attachment li .controls.dragging .statusbar{cursor:-moz-grabbing;cursor:grabbing;}
+ul.attachment li .controls .statusbar .position,
+ul.attachment li .controls .statusbar .loading,
+ul.attachment li .controls .statusbar .annotation{position:absolute;left:0px;top:0px;height:0.5em;}
+ul.attachment li .controls .statusbar .position{background-color:#336699;border-right:3px solid #336699;border-radius:3px;}
+ul.attachment li.sm2_paused .controls .statusbar .position{background-color:#666;border-color:#666;}
+ul.attachment li .controls .statusbar .loading{background-color:#eee;}
+ul.attachment li .controls .statusbar .position,
+ul.attachment li .controls .statusbar .loading{width:0px;}
+ul.attachment li.sm2_playing>a.sm2_link,
+ul.attachment li.sm2_paused>a.sm2_link{}
+ul.attachment li .timing{position:absolute;display:none;text-align:right;right:5px;top:3px;width:auto;height:1em;padding:3px 5px;background-color:#5588bb;border:1px solid #99ccff;border-radius:4px;letter-spacing:0px;font:10px monaco,"VT-100","lucida console",courier,system;line-height:1em;vertical-align:middle;}
+ul.attachment.use-peak li .timing{right:4.25em;}
+ul.attachment li:hover .timing{z-index:2;}
+ul.attachment li .timing div.sm2_timing{margin:0px;padding:0px;margin-top:-1em;}
+ul.attachment li.sm2_playing .timing,
+ul.attachment li.sm2_paused .timing{display:block;}
+ul.attachment li.sm2_paused .timing .sm2_position{text-decoration:blink;}
+ul.attachment li.sm2_paused .timing,
+ul.attachment.use-peak li.sm2_paused .peak{background-color:#888;border-color:#ccc;}
+ul.attachment.use-peak li .peak{display:none;zoom:1;border:1px solid #99ccff;padding:2px;height:0.55em;border-radius:4px;background-color:#5588bb;width:0.8em;height:0.55em;margin-top:-3px;}
+ul.attachment.use-peak li .peak-box{position:relative;width:100%;height:0.55em;overflow:hidden;}
+ul.attachment li .peak .l,
+ul.attachment li .peak .r{position:absolute;left:0px;top:0px;width:7px;height:50px;background:#fff;border:1px solid #fff;border-radius:1px;margin-top:1em;}
+ul.attachment li .peak .l{margin-right:1px;}
+ul.attachment li .peak .r{left:10px;}
+#control-template{display:none;}

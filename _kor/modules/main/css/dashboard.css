@@ -1,0 +1,8 @@
+#linechart { margin-bottom:20px; }
+#piechart1 { float:left; width:50%; margin-bottom:20px; }
+#piechart2 { float:left; width:49%; margin-bottom:20px; }
+.dashboard_cell { padding:5px; }
+.dashboard_box { min-height:250px; height:auto !important; height:250px; background-color: #ececec; padding:10px; border: 1px solid #dadada; }
+.dashboard_focus { border: 1px solid #dadada; }
+
+.jqplot-pie-series.jqplot-data-label { color:#FFF }

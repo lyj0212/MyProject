@@ -1,0 +1,98 @@
+<div class="orgar_map">
+					<img src="/images/contents/sub06/organ.png" alt="아래의 내용을 참고바랍니다."/>
+					<ul class="hide">
+					<li>미래창조과학부</li>
+					<li>
+						<ul>
+						<li>정보통신산업진흥원</li>
+						<li>대전광역시</li>
+						<li>대한민국 국방부</li>
+						</ul>
+					</li>
+					<li>
+						<strong>대덕SW융합클러스터</strong>
+						<ul>
+						<li>SW융합 R&amp;D 기획 위원회</li>
+						<li>SW융합 R&amp;D 평가 위원회</li>
+						<li>대덕 SW융합 클러스터 협의회</li>
+						</ul>
+					</li>
+					</ul>
+				</div>
+				<div class="orgar_mapTxt_wrap">
+					<div class="orgar_mapTxt">
+						<dl>
+						<dt>산업계</dt>
+						<dd>
+							<ul class="li_th1">
+							<li>한화탈레스</li>
+							<li>LIG 넥스원</li>
+							<li>대전지역 IT,SW기업 681개사</li>
+							<li>대덕이노폴리스벤처협회</li>
+							<li>SW콘텐츠 비즈클럽</li>
+							</ul>
+						</dd>
+						</dl>
+					</div>
+					<div class="orgar_mapTxt">
+						<dl>
+						<dt>교육계</dt>
+						<dd>
+							<ul class="li_th1">
+							<li>충남대학교</li>
+							<li>한국과학기술원</li>
+							<li>한밭대학교</li>
+							<li>한남대학교</li>
+							<li>대덕대학교</li>
+							<li>대덕SW마이스터고등학교</li>
+							</ul>
+						</dd>
+						</dl>
+					</div>
+					<div class="orgar_mapTxt">
+						<dl>
+						<dt>정부 출연연</dt>
+						<dd>
+							<ul class="li_th1">
+							<li>한국항공우주연구원</li>
+							<li>한국전자통신연구원</li>
+							<li>한국기계연구원</li>
+							<li>한국과학기술정보연구원</li>
+							</ul>
+						</dd>
+						</dl>
+					</div>
+					<div class="orgar_mapTxt">
+						<dl>
+						<dt>공공기관</dt>
+						<dd>
+							<ul class="li_th1">
+							<li>대전창조경제혁신센터</li>
+							<li>스마트벤처창업학교</li>
+							<li>대전테크노파크</li>
+							<li>ETRI,기가코리아사업단</li>
+							<li>한국과학기술정보연구원</li>
+							<li>(미국)대전 실리콘밸리사무소</li>
+							<li>(영국)Y-Accelerator</li>
+							<li>(중국)심양사무소, 남경사무소</li>
+							<li>(이스라엘)산업연구개발재단</li>
+							</ul>
+						</dd>
+						</dl>
+					</div>
+					<div class="orgar_mapTxt">
+						<dl>
+						<dt>국방</dt>
+						<dd>
+							<ul class="li_th1">
+							<li>육군 본부</li>
+							<li>육군 교육사령부</li>
+							<li>군수기술연구소</li>
+							<li>Ali 민군협력진흥원</li>
+							<li>국가수리과학연구소</li>
+							<li>국방 기술품질원</li>
+							</ul>
+						</dd>
+						</dl>
+					</div>
+				</div>

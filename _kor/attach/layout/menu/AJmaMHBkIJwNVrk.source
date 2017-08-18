@@ -1,0 +1,5 @@
+<ul class="submenu<!--{? ACTIVE}--> active<!--{/}-->">
+	<!--{@ LOOP}-->
+	<li><a href="{.LINK}"<!--{? .ACTIVE}--> class="active" <!--{/}--><!--{? .WIN_TARGET}--> target="{.WIN_TARGET}"<!--{/}-->>{.TITLE}</a></li>
+	<!--{/}-->
+</ul> 

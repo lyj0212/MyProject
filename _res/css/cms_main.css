@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* Web Standardization Team, Author:JongWoon,LEE  2016.12.06 */
+
+.mCnts_wrap{display:block;position:relative}
+.mCnts_wrap:after{clear:both;display:block;content:""}
+.mCnts_wrap > .mCnts1,.mCnts_wrap > .mCnts2,.mCnts_wrap > .mCnts3{float:left}
+.mCnts_wrap > .mCnts1{width:820px}
+.mCnts_wrap > .mCnts2{width:365px;margin-left:15px}
+.mCnts_wrap > .mCnts3{width:100%;margin-top:15px}
+.mCnts_wrap h3{margin:0;padding:0}
+.mCnts_wrap h3:after{display:none}
+
+/*비주얼*/
+.mCnts_wrap .mVisual_wrap{display:block;position:relative;overflow:hidden;min-height:350px}
+.mVisual_wrap .obj{display:block;position:relative;width:200%}
+.mVisual_wrap .obj:after{clear:both;display:block;content:""}
+.mVisual_wrap .obj > li{float:left;width:820px}
+.mVisual_wrap .mVisual_desc{display:block;position:relative}
+.mVisual_wrap .mVisual_desc > img{display:block}
+.mVisual_wrap .mVisual_desc > .title{display:block;position:absolute;top:55px;left:45px}
+.mVisual_wrap .title > strong{display:block;position:relative;padding-bottom:20px;font-weight:400;font-size:1.286em;line-height:1.5556em;color:#67cfb6;letter-spacing:-0.02778em}
+.mVisual_wrap .title >  strong:after{display:block;position:absolute;bottom:0;left:0;width:40px;height:1px;background:#01906d;content:""}
+.mVisual_wrap .title > .desc{display:block;margin-top:20px;font-size:1.429em;line-height:1.5em;color:#fff;letter-spacing:-0.0375em}
+.mVisual_wrap .title > .desc > strong{display:block;font-weight:400;font-size:2.250em;line-height:1.222em;letter-spacing:-0.0889em}
+.mVisual_wrap .title > .desc > strong > em{font-weight:700;line-height:1.222em}
+.mVisual_wrap .no2 .title > strong{color:#fff}
+.mVisual_wrap .no2 .title >  strong:after{background:#fff}
+.mVisual_wrap .control{display:block;position:absolute;bottom:45px;left:45px}
+.mVisual_wrap .control > div{display:block;float:left;margin:0}
+.mVisual_wrap .control > .pivot{}
+.mVisual_wrap .control > .autoCtrl{margin-left:5px}
+.mVisual_wrap .control .bx-pager,.mVisual_wrap .control .bx-pager-item,.mVisual_wrap .control .bx-controls-auto,.mVisual_wrap .control .bx-controls-auto-item{float:left}
+.mVisual_wrap .control a{display:block;float:left;width:21px;height:21px;background:url(/images/main/mvisual_ctrl.png) no-repeat;font-size:0;line-height:0}
+.mVisual_wrap .control a.bx-pager-link{background-position:0 0}
+.mVisual_wrap .control a.bx-pager-link.active{background-position:-21px 0}
+.mVisual_wrap .control .bx-controls-auto-item > a{display:block}
+.mVisual_wrap .control .bx-controls-auto-item > a.active{display:none}
+.mVisual_wrap .control a.bx-stop{background-position:-42px 0}
+.mVisual_wrap .control a.bx-start{background-position:-63px 0}
+
+/*일정안내*/
+.schedule_wrap{display:block;position:relative;overflow:hidden;height:60px;padding:17px 50px 17px 200px;border:1px solid #c5c5c5;background:#fff}
+.schedule_wrap > h3{display:block;position:absolute;top:0;left:0;width:200px;height:100%;padding:12px 0;background:#8f8f8f;font-size:1.143em;line-height:2.0625em;color:#fff;letter-spacing:-0.03125em;text-align:center}
+.schedule_wrap > h3 > span{display:inline-block;padding-left:50px;background:url(/images/main/schedule_h3_icon.png) no-repeat 0 50%;line-height:2.0625em}
+.schedule_wrap .schedulelst_wrap{display:block;overflow:hidden;height:24px}
+.schedule_wrap .schedule_lst{display:block;position:relative;overflow:hidden}
+.schedule_wrap .schedule_lst > li{display:block}
+.schedule_wrap .schedule_lst a{display:block;padding:0 20px;line-height:1.71428em;color:#555;letter-spacing:-0.03571em}
+.schedule_wrap .schedule_lst a > .date{float:left;margin-right:10px;line-height:1.71428em;letter-spacing:0}
+.schedule_wrap .bx-controls a[class*="bx-"]{display:block;position:absolute;top:0;right:-1px;width:50px;min-height:30px;border:1px solid #b8b8b8;background:#fff url(/images/main/schedule_ctrl.png) no-repeat;font-size:0;line-height:0}
+.schedule_wrap .bx-controls a.bx-prev{top:-1px;min-height:31px;background-position:0 0}
+.schedule_wrap .bx-controls a.bx-next{top:29px;background-position:0 -29px}
+
+/*퀵링크*/
+.quickLink_wrap{display:block;position:relative;margin-top:15px}
+.quickLink_wrap ul{display:block;position:relative}
+.quickLink_wrap ul:after{clear:both;display:block;content:""}
+.quickLink_wrap li{float:left;position:relative;width:25%}
+.quickLink_wrap li:before{display:block;position:absolute;top:0;left:0;width:1px;height:100%;background:#e7e7e7;content:""}
+.quickLink_wrap li:first-child:before{display:none}
+.quickLink_wrap li > a{display:block;min-height:190px;padding:25px;font-size:1.071em;line-height:1.2em;color:#fff;letter-spacing:-0.0333em;text-align:center}
+.quickLink_wrap li.no1 > a{background:#44a990}
+.quickLink_wrap li.no2 > a{background:#7fb34c}
+.quickLink_wrap li.no3 > a{background:#4992c1}
+.quickLink_wrap li.no4 > a{background:#5f73a5}
+.quickLink_wrap li > a > span{display:block;position:relative;padding-top:100px;line-height:1.2em}
+.quickLink_wrap li > a > span:after{display:block;position:absolute;top:0;left:50%;width:85px;height:85px;margin-left:-43px;background:url(/images/main/quickLink_icon.png) no-repeat;content:""}
+.quickLink_wrap li.no1 > a > span:after{background-position:0 0}
+.quickLink_wrap li.no2 > a > span:after{background-position:-85px 0}
+.quickLink_wrap li.no3 > a > span:after{background-position:-170px 0}
+.quickLink_wrap li.no4 > a > span:after{background-position:-255px 0}
+
+
+/*뉴스*/
+.news_wrap{display:block;position:relative;min-height:300px;padding:74px 25px 22px;background:#fff}
+.news_wrap + .news_wrap{margin-top:15px}
+.news_wrap > h3{display:block;position:absolute;top:0;left:0;width:100%;min-height:60px;padding:15px 25px;background:#8f8f8f;font-size:1.429em;line-height:1.5em;color:#fff;letter-spacing:-0.05em}
+.news_wrap > .more{display:block;position:absolute;top:20px;right:25px;width:19px;height:19px}
+.news_wrap > .more > a{display:block;width:100%;height:100%;background:url(/images/main/news_more.png) no-repeat;font-size:0;line-height:0}
+.news_wrap > .news_lst,.news_wrap > .news_lst > li{display:block;position:relative}
+.news_wrap > .news_lst > li{padding-right:70px}
+.news_wrap > .news_lst a{display:block;position:relative;padding:7px 0 7px 10px;line-height:1.42857em;color:#555;letter-spacing:-0.03571em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.news_wrap > .news_lst a:after{display:block;position:absolute;top:15px;left:0;width:4px;height:4px;border-radius:50%;background:#a6a6a6;content:""}
+.news_wrap > .news_lst .date{display:block;position:absolute;top:0;right:0;padding:7px 0;font-size:0.857em;line-height:1.6667em;color:#9d9d9d;letter-spacing:-0.0416667em}
+.news_wrap > .news_lst.notice a{padding-left:43px}
+.news_wrap > .news_lst.notice a:after{display:none}
+.news_wrap > .news_lst.notice .cate{display:block;position:absolute;top:7px;left:0;width:35px;height:20px;border:1px solid transparent;background:transparent;font-size:0.929em;line-height:1.23076em;color:#fff;letter-spacing:-0.03846em;text-align:center}
+.news_wrap > .news_lst.notice .cate.notice{border-color:#dc770b;background-color:#f38816}
+.news_wrap > .news_lst.notice .cate.pr{border-color:#957425;background-color:#ae8b37}
+
+
+/*기타서비스*/
+.mCnts3 [class*="etc_"]{float:left;position:relative;min-height:145px;margin:0 0 0 15px;background-color:#fff}
+/*링크*/
+.etc_golinklst{width:405px;margin-left:0 !important}
+.etc_golinklst:before,.etc_golinklst:after{display:block;position:absolute;top:0;left:0;width:auto;height:auto;background:#e7e7e7;content:""}
+.etc_golinklst:before{top:73px;width:100%;height:1px}
+.etc_golinklst:after{left:50%;width:1px;height:100%}
+.etc_golinklst > li{float:left;width:50%}
+.etc_golinklst a{display:block;padding:16px 30px;font-size:1.071em;line-height:1.333em;color:#555;letter-spacing:-0.0333em}
+.etc_golinklst a > span{display:block;position:relative;padding:10px 0 10px 55px;line-height:1.333em}
+.etc_golinklst a > span:after{display:block;position:absolute;top:0;left:0;width:40px;height:40px;background:url(/images/main/etc_golinklst_icon.png) no-repeat;content:""}
+.etc_golinklst .no1 a > span:after{background-position:0 0}
+.etc_golinklst .no2 a > span:after{background-position:-40px 0}
+.etc_golinklst .no3 a > span:after{background-position:-80px 0}
+.etc_golinklst .no4 a > span:after{background-position:-120px 0}
+
+/*플랫폼*/
+.etc_platformintro{width:400px}
+.etc_platformintro > a{display:block;height:100%;padding:30px;background:url(/images/main/etc_platformintro_bg.png) no-repeat 100% 100%}
+.etc_platformintro strong{display:block;font-weight:400;font-size:1.429em;line-height:1.5em;color:#3f4749;letter-spacing:-0.05em}
+.etc_platformintro .desc{display:block;margin:14px 0 5px;font-size:0.929em;line-height:1.3846em;color:#9d9d9d;letter-spacing:-0.03846em}
+
+/*기타서비스*/
+.etc_servicelink{width:365px;padding:28px 25px}
+.etc_servicelink:after{display:block;position:absolute;top:23px;left:130px;width:1px;height:99px;background:#e7e7e7;content:""}
+.etc_servicelink > .location,.etc_servicelink > .organ_links{float:left;position:relative;min-height:89px;margin:0;z-index:1}
+.etc_servicelink > .location{width:105px;margin-right:20px}
+.etc_servicelink > .location > a{display:block;padding-top:69px;background:url(/images/main/location_img.png) no-repeat 50% 0;text-align:center}
+.etc_servicelink > .organ_links{width:190px}
+.etc_servicelink > .organ_links > dl{display:block;position:relative;height:35px;margin:0}
+.etc_servicelink > .organ_links > dl + dl{margin-top:19px}
+.etc_servicelink > .organ_links dt{display:block;border:1px solid #e5e5e5}
+.etc_servicelink > .organ_links dt > a{display:block;position:relative;padding:8px 14px;font-size:0.929em;line-height:1.3076em;color:#515759;letter-spacing:-0.03846em}
+.etc_servicelink > .organ_links dt > a:after{display:block;position:absolute;top:0;right:0;width:33px;height:33px;background:url(/images/main/organ_links_arrow.png) no-repeat 0 0;content:""}
+.etc_servicelink > .organ_links dt.active > a:after{background-position:-33px 0}
+.etc_servicelink > .organ_links dd{display:none;position:absolute;bottom:34px;right:0;transition:none !important;-webkit-transition:none !important}
+.etc_servicelink > .organ_links .organ_links_lst{display:block;position:relative;overflow:hidden;width:380px;padding:10px 15px;border:1px solid #e5e5e5;background:#f1f1f1}
+.etc_servicelink > .organ_links ul,.etc_servicelink > .organ_links li{display:block}
+.etc_servicelink > .organ_links ul:after{clear:both;display:block;content:""}
+.etc_servicelink > .organ_links li{float:left;width:50%}
+.etc_servicelink > .organ_links li > a{display:block;position:relative;padding:5px 0 5px 10px;font-size:0.929em;line-height:1.53846em;color:#555;letter-spacing:-0.03846em}
+.etc_servicelink > .organ_links li > a:after{display:block;position:absolute;top:15px;left:0;width:4px;height:4px;border-radius:50%;background:#a6a6a6;content:""}
+.etc_servicelink > .organ_links .network .organ_links_lst{width:190px}
+.etc_servicelink > .organ_links .network li{width:100%}

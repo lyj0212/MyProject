@@ -1,0 +1,5 @@
+<ul class="depth02">
+	<!--{@ LOOP}-->
+	<li<!--{? .ACTIVE}--> class="on"<!--{/}-->><a href="{.LINK}"<!--{? .WIN_TARGET}--> target="{.WIN_TARGET}"<!--{/}-->>{.TITLE}</a></li>
+	<!--{/}-->
+</ul>

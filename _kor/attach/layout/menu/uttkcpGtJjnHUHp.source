@@ -1,0 +1,5 @@
+<ul>
+  <!--{@ LOOP}-->
+  <li><a href="{.LINK}" <!--{? .ACTIVE}--> class="active"<!--{/}-->>{.TITLE}</a></li>
+  <!--{/}-->	
+</ul>

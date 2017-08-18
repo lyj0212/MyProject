@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="/_res/libs/bootstrap/css/bootstrap.min.css?popup">
+<link rel="stylesheet" href="/_res/css/theme.css?popup">
+<link rel="stylesheet" href="/manager/css/popup.css?popup">
+<link rel="stylesheet" href="/_res/css/iSmartCode.css?popup">
+<link rel="stylesheet" href="/_res/css/project.css?popup">
+<link rel="stylesheet" href="/common/css/popup.css?popup">
+<link rel="stylesheet" href="/common/css/print.css?popup">
+   <link rel="stylesheet" href="/_res/css/font_notosans.css" />
+<style>
+html, body { margin:0 !important; padding:0 !important; background-color:#FFF !important}
+body { font-family:'NanumGothicWeb', 'Nanum Gothic', 'Apple SD Gothic Neo', 'Malgun Gothic', dotum !important; font-size: 12px; }
+</style>
+</head>
+
+<body>
+
+<div class="clearfix">
+	<div class="title_area clearfix">
+		<h2 class="pull-left"><?php echo $this->title; ?></h2>
+		<p class="pull-right close_modal"><a href=""><img src="/images/btn/btn_close_pop.gif" alt="닫기" /></a></p>
+	  <p class="pull-right print">
+		<a href="" onclick="window.print(); return false;"><img src="/images/btn/btn_print.gif" alt="인쇄하기" /></a>
+	  </p>
+	</div>
+	<div class="modal-body">
+	<?php echo $content_for_layout; ?>
+	</div>
+</div>
+
+</body>
+</html>

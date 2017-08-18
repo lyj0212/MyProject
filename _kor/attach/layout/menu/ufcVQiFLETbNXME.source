@@ -1,0 +1,8 @@
+<ul id="dashboard-menu">
+	<!--{@ LOOP}-->
+	<li<!--{? .ACTIVE}--> class="active"<!--{/}-->>
+		<a href="{.LINK}"<!--{? .SUB_ENTRIES}--> class="dropdown-toggle" <!--{/}--><!--{? .WIN_TARGET}--> target="{.WIN_TARGET}"<!--{/}-->><!--{? .ACTIVE}--><div class="pointer"><div class="arrow"></div><div class="arrow_border"></div></div><!--{/}--><span>{.TITLE}</span><!--{? .SUB_ENTRIES}--><i class="glyphicon glyphicon-chevron-down"></i><!--{/}--></a>
+		{.SUB_ENTRIES}
+	</li>
+	<!--{/}-->
+</ul> 

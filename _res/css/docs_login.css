@@ -1,0 +1,191 @@
+@charset "utf-8";
+/* Web Standardization Team, Author:JongWoon,LEE / JiHye,KIM  2016.11.14 */
+
+/*@import url(http://notosanskr-hestia.s3-website-ap-northeast-1.amazonaws.com/stylesheets/NotoSansKR-Hestia.css);*/
+@import url(/_res/css_v2/font_notosans.css);
+html,body{height:100%;min-height:100%}
+body{background:#eeeff2;font-weight:350;font-family:"Nanum Square","Apple SD Gothic Neo","맑은 고딕","Malgun Gothic","나눔 고딕","Nanum Gothic","돋움",Dotum,"굴림",Gulim,'Apple Gothic',sans-serif}
+/*login*/
+body.intro{min-width:100%;height:100%;min-height:100%}
+#login{position:relative;height:100%}
+#login #contents{position:relative;height:100%}
+#login .bg{position:fixed;top:0;left:0;width:auto;height:auto;min-width:100%;min-height:100%;background-color:#1b1c2f;background:no-repeat 50% 50% fixed;background-size:cover;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;z-index:-100}
+#login .bg.ccei{background-image:url(/images/login/bg_login_ccei.jpg)}
+#login .bg-alpha{position:absolute;top:0;left:0;width:100%;height:100%;border-radius:2px;background:#fff;filter:alpha(opacity=15);opacity:0.15}
+#login .bg-alpha.percent25{filter:alpha(opacity=25);opacity:0.25}
+#login .bg{-webkit-animation:swirlRight 2000ms ease 0s;animation:swirlRight 2000ms ease 0s}
+#login .login_wrap{display:none;position:absolute;top:50%;left:50%;width:390px;margin-left:-195px;padding:0 15px;text-align:center}
+#login .login_wrap h1{margin:0}
+#login .login_wrap h1 a{display:block;width:150px;height:50px;margin:0 auto;font-size:0;line-height:0}
+#login .login_wrap .hope_info{position:relative;margin:50px 0 0 0}
+#login .login_wrap .hope_info span{display:block;filter:alpha(opacity=60);opacity:0.6;color:#fff;letter-spacing:-0.05em}
+#login .login_wrap .hope_info strong{display:block;font-weight:normal;font-size:60px;line-height:1.25em;color:#fff}
+#login .login_wrap .hope_info strong em{position:relative;overflow:hidden;font-style:normal;font-size:70px;line-height:1.15em;vertical-align:top}
+#login .login_wrap .login_box{display:block;position:relative;width:100%;margin-top:30px}
+#login .login_wrap .login_box .inner{display:block;border-radius:8px;box-shadow:0 3px 2px #000;z-index:1}
+#login .login_wrap .login_box.intro .inner{height:200px}
+#login .login_wrap .content_wrap{position:relative;padding:30px 45px;z-index:1000}
+#login .login_wrap .content_wrap p{margin:0}
+#login .login_wrap .content_wrap .login_btn{width:100%;height:42px;margin-bottom:20px}
+#login .login_wrap .content_wrap .login_btn .btn{width:100%;height:100%;padding:0;border:0 none;background:transparent;font-weight:bold;font-size:15px;color:#fff}
+#login .login_wrap .content_wrap .join_sec{display:block;position:relative;margin-bottom:10px}
+#login .login_wrap .content_wrap .line{display:block;position:absolute;top:10px;width:100%;height:1px;background:url(/images/login/login_line.png) no-repeat 50% 0;filter:alpha(opacity=20);opacity:0.2}
+#login .login_wrap .content_wrap .join_sec .txt{display:block;font-size:12px;line-height:1.65em;color:#fff;filter:alpha(opacity=40);opacity:0.4}
+#login .login_wrap .content_wrap .join_btn{height:42px;margin:0 -2% 6px}
+#login .login_wrap .content_wrap .join_btn > div{float:left;margin:0 2%}
+#login .login_wrap .content_wrap .join_btn > div .btn{width:100%;height:42px;padding:0;border:0 none;border-radius:2px !important}
+#login .login_wrap .content_wrap .join_btn > div.facebook .btn{background:#425f9f url(/images/login/join_btn_fb.png) no-repeat 50% 50%;font-size:0;line-height:0}
+#login .login_wrap .content_wrap .join_btn > div.google .btn{background:#b12f1c url(/images/login/join_btn_gg.png) no-repeat 50% 50%;font-size:0;line-height:0}
+#login .login_wrap .content_wrap .join_btn > div.join .btn{background:#6fa03a;font-weight:bold;font-size:12px;color:#fff;letter-spacing:-0.05em}
+#login .login_wrap .content_wrap .join_btn > div.basic .btn{background:transparent;font-weight:400;font-size:20px;line-height:1em;color:#fff;letter-spacing:-0.05em}
+
+/*form*/
+#login .login_wrap .form-horizontal legend{display:none}
+#login .login_wrap .form-group{position:relative;margin:10px 0 0 0;padding:0;border-bottom:0 none}
+#login .login_wrap .form-group.frm_id{margin:0}
+#login .login_wrap .form-group .col-sm-6,
+#login .login_wrap .form-group .col-sm-11{padding:0;margin:0}
+#login .login_wrap .form-group .line{top:auto;bottom:0;width:100%;background-repeat:repeat;background-position:0 0}
+#login .login_wrap .control-label{display:block;float:left;width:20px;height:20px;margin:10px 0;padding:0;background:url(/images/login/login_form_icon.png) no-repeat 0 0;font-size:0 !important;line-height:0;text-align:left}
+#login .login_wrap .form-control-ipt{display:block;position:relative;margin-left:25px}
+#login .login_wrap .frm_id .control-label{background-position:0 0}
+#login .login_wrap .frm_pw .control-label{background-position:0 -20px}
+#login .login_wrap .frm_mail .control-label{background-position:0 -40px}
+#login .login_wrap .form-control{height:40px;padding:9px 10px 13px;border:0 none;background:transparent;font-size:12px !important;line-height:1.5em;color:#fff}
+#login .login_wrap .form-control::-webkit-input-placeholder{color:#fff;filter:alpha(opacity=40);opacity:0.4}
+#login .login_wrap .form-control:-moz-placeholder{color:#fff;filter:alpha(opacity=40);opacity:0.4}
+#login .login_wrap .form-control:-ms-input-placeholder{color:#fff;filter:alpha(opacity=40);opacity:0.4}
+#login .login_wrap .form-horizontal .login_chk{float:left;width:50%;min-height:28px;padding-left:20px;text-align:left}
+#login .login_wrap .form-horizontal .login_chk label{position:relative;margin:0;font-weight:400;font-size:12px !important;line-height:1.75em;color:#fff;letter-spacing:-0.05em}
+#login .login_wrap .form-horizontal .login_chk label input[type="checkbox"],#login .login_wrap .form-horizontal .login_chk label .icheck{display:block;position:absolute;top:3px;left:-20px;width:16px;height:16px;margin:0}
+#login .login_wrap .form-horizontal .login_chk label a{color:#fff}
+#login .login_wrap .form-horizontal .login_chk label input[type="checkbox"]{visibility:hidden}
+#login .login_wrap .form-horizontal .login_chk label .icheck{background:url(/images/login/designCheckbox_bg.png) no-repeat 0 0}
+#login .login_wrap .form-horizontal .login_chk label input[type="checkbox"]:focus + .icheck,#login .login_wrap .form-horizontal .login_chk label input[type="checkbox"]:checked + .icheck{background-position:-16px 0}
+
+/*signupForm Animation*/
+#login .login_wrap.intro,#login .login_wrap.login_form,#login .login_wrap.join_form,#login .login_wrap.pwsch_form{display:block;-webkit-animation:signupForm 0.3s ease-out 0.7s;-moz-animation:signupForm 0.3s ease-out 0.7s;-ms-animation:signupForm 0.3s ease-out 0.7s;-o-animation:signupForm 0.3s ease-out 0.7s;animation:signupForm 0.3s ease-out 0.7s;-webkit-animation-fill-mode:backwards;-moz-animation-fill-mode:backwards;-ms-animation-fill-mode:backwards;-o-animation-fill-mode:backwards;animation-fill-mode:backwards}
+@-webkit-keyframes signupForm{0%{opacity:0;-webkit-transform:translateY(25px)} 100%{opacity:1;-webkit-transform:translateY(0)}}
+@-moz-keyframes signupForm{0%{opacity:0;-moz-transform:translateY(25px)} 100%{opacity:1;-moz-transform:translateY(0)}}
+@keyframes signupForm{0%{opacity:0;-webkit-transform:translateY(25px);-moz-transform:translateY(25px);-ms-transform:translateY(25px);-o-transform:translateY(25px);transform:translateY(25px)} 100%{opacity:1;-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0)}}
+/*login intro*/
+#login .login_wrap.intro{height:434px;margin-top:-217px}
+#login .login_wrap.intro .content_wrap .join_btn{width:103%}
+#login .login_wrap.intro .content_wrap .join_btn > div{width:29.3%}
+/*login form*/
+#login .login_wrap.login_form{height:568px;margin-top:-284px}
+#login .login_wrap.login_form .checkGroup_wrap{display:table;width:100%;height:42px;margin-bottom:10px;table-layout:fixed}
+#login .checkGroup_wrap .form-group{display:table-cell;position:relative;float:none;width:1%;margin:0}
+#login .checkGroup_wrap .form-group + .form-group{margin-left:-1px}
+#login .checkGroup_wrap .form-group input[type="radio"]{position:absolute;top:0;left:0;margin:0;visibility:hidden}
+#login .checkGroup_wrap .form-group label{display:block;position:absolute;top:0;left:0;width:100%;height:42px;padding:10px 0;margin-bottom:0;border-radius:2px 2px 0 0;border-width:1px 0 1px 1px;border-color:rgba(255,255,255,0.2) rgba(255,255,255,0.2) rgba(255,255,255,1);font-weight:400;font-size:1em !important;line-height:1.571em;color:rgba(255,255,255,0.4);cursor:pointer;z-index:1}
+#login .checkGroup_wrap .form-group + .form-group label{border-width:1px 1px 1px 0}
+#login .checkGroup_wrap .form-group input[type="radio"]:focus + label,#login .checkGroup_wrap .form-group input[type="radio"]:checked + label{border-color:#fff;border-width:1px 1px 0;color:#fff}
+
+
+#login .login_wrap.login_form .passwd_sch{float:right;width:50%;text-align:right}
+#login .login_wrap.login_form .passwd_sch .btn{min-height:28px;padding:0;margin-top:-3px;border:0 none;background:transparent;font-size:12px;line-height:1em;color:#fff;letter-spacing:-0.05em}
+#login .login_wrap.login_form .content_wrap .join_btn{width:104%}
+#login .login_wrap.login_form .content_wrap .join_btn > div{width:46%}
+/*login join*/
+#login .login_wrap.join_form{height:489px;margin-top:-245px}
+#login .login_wrap.join_form .content_wrap .login_btn{margin-bottom:8px}
+#login .login_wrap.join_form .content_wrap .login_btn .btn{border-radius:2px !important;background:#6fa03a}
+#login .login_wrap.join_form .form-horizontal .login_chk{width:100%}
+/*login passwdsch*/
+#login .login_wrap.pwsch_form{height:496px;margin-top:-248px}
+#login .login_wrap.pwsch_form .form-group .txt{display:block;margin:5px 0 10px;font-size:18px;line-height:1.15em;color:#fff;letter-spacing:-0.05em;text-align:left}
+#login .login_wrap.pwsch_form .form-group .txt strong{color:#ace915}
+#login .login_wrap.pwsch_form .form-group .txt small{font-size:12px;line-height:1.65em}
+#login .login_wrap.pwsch_form .form-group .txt.responsive{display:none}
+#login .login_wrap.pwsch_form .content_wrap .login_btn{margin-bottom:8px}
+/*사용할 비밀번호 입력*/
+.passwd_ipt_wrap{display:block;position:relative;height:100%}
+.passwd_ipt_wrap .passwd_ipt_box{width:510px;margin:100px auto 0}
+.passwd_ipt_wrap .passwd_ipt_box h3{margin:0 0 20px;font-size:26px;line-height:1.5em;letter-spacing:-0.05em}
+.passwd_ipt_wrap .passwd_ipt_box h3 br{display:none}
+.passwd_ipt_wrap .passwd_ipt_box .form-group{text-align:center}
+.passwd_ipt_wrap .passwd_ipt_box .frm_pw{margin:0 48px 50px;padding:0}
+.passwd_ipt_wrap .passwd_ipt_box .frm_pw input{height:50px;padding:3px 12px 9px;font-size:26px !important;color:#333;line-height:28px}
+.passwd_ipt_wrap .passwd_ipt_box .frm_pw input:hover,.passwd_ipt_wrap .passwd_ipt_box .frm_pw input:focus{border-color:#91c61c}
+.passwd_ipt_wrap .passwd_ipt_box .ok_btn{width:100px;height:34px}
+.passwd_ipt_wrap .passwd_ipt_box .ok_btn .btn{width:100%;margin:0;border:0 none;border-radius:3px !important;background:#94c51b;font-weight:700;font-size:14px;color:#fff;letter-spacing:-0.04em}
+
+hr{display:none}
+/*footer*/
+.footer{display:none}
+
+
+/*Responsive Web*/
+@media (max-width:1023px){/*1023px*/
+	.login_wrap .row{margin-right:-15px;margin-left:-15px}
+}
+
+/*모바일사이즈*/
+@media (max-width:768px){/*768px*/}
+@media (max-width:640px){/*640px*/}
+@media (max-width:480px){/*480px*/
+	/*login*/
+	#login .login_wrap{width:300px;margin-left:-150px}
+	#login .login_wrap.intro{top:90px;height:419px;margin-top:0}
+	#login .login_wrap.login_form{top:25px;height:557px;margin-top:0}
+	#login .login_wrap.join_form{top:90px;height:476px;margin-top:0}
+	#login .login_wrap.pwsch_form{top:90px;height:479px;margin-top:0}
+	#login .login_wrap .content_wrap{padding:30px 20px}
+	#login .login_wrap .hope_info{margin-right:-5px;margin-left:-5px}
+	#login .login_wrap .hope_info strong{font-size:50px;letter-spacing:-0.01em}
+	#login .login_wrap .hope_info strong em{font-size:60px}
+	#login .appdown_wrap{margin-top:5px}
+	#login .appdown_wrap a{width:96px;height:22px;margin-left:10px;background-size:96px 44px}
+	#login .appdown_wrap a.app-store{width:83px;background-position:0 -22px}
+	#login .login_foot{position:absolute;bottom:15px;margin:0 auto}
+	#login .login_wrap.pwsch_form .form-group .txt{display:none}
+	#login .login_wrap.pwsch_form .form-group .txt.responsive{display:block}
+	#login .login_wrap .content_wrap .login_btn .btn{font-size:12px}
+	/*passwd_ipt*/
+	.passwd_ipt_wrap .passwd_ipt_box{width:100%;margin-top:50px}
+	.passwd_ipt_wrap .passwd_ipt_box h3{font-size:23px}
+	.passwd_ipt_wrap .passwd_ipt_box .frm_pw{margin:0 30px 30px}
+}
+@media (max-width:414px){/*414px*/
+	/*login*/
+	#login .login_wrap.intro{top:30px;height:409px}
+	#login .login_wrap.login_form{height:547px}
+	#login .login_wrap.join_form{height:476px}
+	#login .login_wrap.pwsch_form{height:469px}
+	#login .login_wrap .hope_info{margin-top:40px}
+	#login .sugarain_mean{margin-left:30px}
+	#login .appdown_wrap{margin-right:30px}
+	/*passwd_ipt*/
+	.passwd_ipt_wrap .passwd_ipt_box h3{text-align:center}
+	.passwd_ipt_wrap .passwd_ipt_box h3 br{display:block}
+	.passwd_ipt_wrap .passwd_ipt_box .frm_pw{margin:0 0 30px}
+}
+@media (max-width:375px){/*375px*/}
+@media (max-width:360px){/*360px*/}
+@media (max-width:320px){/*320px*/
+	/*login*/
+	#login .login_wrap.intro{top:25px}
+	#login .login_wrap.join_form{top:25px;height:446px}
+	#login .login_wrap.pwsch_form{top:25px;height:439px}
+	#login .login_wrap .login_box{margin-top:10px}
+	#login .login_wrap .hope_info{margin-top:30px}
+	#login .sugarain_mean{margin-left:10px}
+	#login .appdown_wrap{margin-right:10px}
+	#login .login_wrap.intro + .login_foot{margin:430px 0 10px}
+	#login .login_wrap.join_form + .login_foot{margin:490px 0 10px}
+	#login .login_wrap.pwsch_form + .login_foot{margin:490px 0 10px}
+	/*passwd_ipt*/
+	.passwd_ipt_wrap .passwd_ipt_box{width:90%}
+}
+
+/*창조경제혁신센터*/
+#login.ccei{}
+#login.ccei .login_wrap h1 a{width:300px;height:215px;}
+#login.ccei .login_wrap .hope_info{margin-top:-35px}
+#login.ccei .login_wrap .content_wrap{padding-bottom:25px}
+#login.ccei .login_wrap .content_wrap .login_btn{margin-bottom:10px}
+#login.ccei .login_wrap.login_form .content_wrap .join_btn{width:100%;margin:0}
+#login.ccei .login_wrap.login_form .content_wrap .join_btn > div{width:100%;margin:0}
+#login.ccei .login_wrap .content_wrap .login_btn .btn{border-radius:3px !important;background-color:#e52e4d}
+

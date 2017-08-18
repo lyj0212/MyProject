@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+
+	<name>회원관리</name>
+
+	<section>
+		<title>로그인</title>
+		<date>2012-09-24</date>
+		<target>member/accounts/index</target>
+		<permission>N</permission>
+	</section>
+	
+	<section>
+		<title>회원가입</title>
+		<date>2016-12-01</date>
+		<target>member/accounts/join</target>
+		<permission>N</permission>
+	</section>
+	
+	<section>
+		<title>개인정보수정</title>
+		<date>2016-12-01</date>
+		<target>member/accounts/joinUpdate</target>
+		<permission>N</permission>
+	</section>
+	<section>
+		<title>기업정보입력</title>
+		<date>2016-12-01</date>
+		<target>member/accounts/infoCorp</target>
+		<permission>N</permission>
+	</section>
+	<section>
+		<title>정보이관</title>
+		<date>2016-12-13</date>
+		<target>member/accounts/myTransfer</target>
+		<permission>N</permission>
+	</section>
+
+	<section>
+		<title>관리자 로그인</title>
+		<date>2012-09-24</date>
+		<target>member/accounts/admin_login</target>
+		<permission>N</permission>
+	</section>
+
+	<section>
+		<title>회원 관리</title>
+		<date>2012-09-24</date>
+		<target>member/manager/index</target>
+		<grants>
+			<grant title="목록보기" action="index" default="allow" />
+			<grant title="내용보기" action="view" default="allow">
+				<option query="SELECT id FROM {dbprefix}member WHERE id='{param.id}' AND id='{memberid}'"  />
+			</grant>
+			<grant title="회원등록" action="write|save|delete">
+				<option uncase="param.id" />
+				<option case="param.id" query="SELECT id FROM {dbprefix}member WHERE id='{param.id}' AND id='{memberid}'" />
+			</grant>
+		</grants>
+	</section>
+
+	<section>
+		<title>회원 그룹 관리</title>
+		<date>2012-11-07</date>
+		<target>member/group/index</target>
+	</section>
+
+</module>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>기업성장관리시스템</title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+
+<link rel="stylesheet" type="text/css" href="/_res/libs/bootstrap/css/bootstrap.min.css?popup" />
+<link rel="stylesheet" type="text/css" href="/_res/css/theme.css?popup" />
+<link rel="stylesheet" type="text/css" href="/_res/css/iSmartCode.css?popup" />
+<link rel="stylesheet" type="text/css" href="/_res/css/project.css?popup" />  
+<link rel="stylesheet" type="text/css" href="/_res/css/font_notosans.css?popup" />
+<link rel="stylesheet" type="text/css" href="/_res/font-awesome/css/font-awesome.min.css?popup" />
+<link rel="stylesheet" type="text/css" href="/_res/fontello/css/fontello.css?popup" />
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900?popup" />  
+<link rel="stylesheet" type="text/css" href="/_res/css/popup.css?popup">
+<link rel="stylesheet" type="text/css" href="/_res/css/docs_cmpt.css?popup" />
+<link rel="stylesheet" type="text/css" href="/_res/css/docs_animate.css?popup" />
+<link rel="stylesheet" type="text/css" href="/_res/css/cms_layout.css?popup" />
+<link rel="stylesheet" type="text/css" href="/_res/css/cms_cmpt.css?popup" />
+<link rel="shortcut icon" href="/images/ico/favicon_cms.ico" />
+<style>
+  html, body {background-color:transparent !important;margin:0 !important;padding:0 !important;}
+</style>
+</head>
+<body>
+
+<div class="modalPopup_wrap modal-dialog">
+	<h1 class="hide">레이어팝업</h1>
+	<div id="modal-content" class="modal-content">
+		<div class="modal-header">
+			<h2 class="modal-title"><?php echo $this->title; ?></h2>
+		</div>
+		<div class="modal-body">
+		    <?php echo $content_for_layout; ?>
+	    </div>
+	  	<p class="close_modal"><a href=""><span class="modal_close">닫기</span></a></p>
+	</div>
+</div>
+
+</body>
+</html>

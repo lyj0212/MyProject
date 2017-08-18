@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+
+    <name>발주관리 시스템</name>
+
+    <section>
+        <title>My Page</title>
+        <date>2017-08-10</date>
+        <target>order/mypage/index</target>
+        <grants>
+            <grant title="메뉴보기" action="index" default="allow"/>
+            <grant title="메뉴관리" action="save_area|add_map|delete_map|add|save|delete|grant|grant_save" default="allow" />
+        </grants>
+    </section>
+
+    <section>
+        <title>발주관리</title>
+        <date>2017-08-10</date>
+        <target>order/order/index</target>
+        <grants>
+            <grant title="목록보기" action="index" default="allow" />
+            <!--<grant title="내용보기" action="view" default="allow">
+                <option query="SELECT id FROM {dbprefix}order WHERE id='{param.id}' AND ismember='{memberid}'" />
+            </grant>-->
+            <grant title="댓글쓰기" action="comment|comment_write|comment_save|comment_delete">
+                <option uncase="param.cid" default="allow" />
+                <option case="param.cid" query="SELECT id FROM {dbprefix}comment WHERE id='{param.cid}' AND ismember='{memberid}'" />
+            </grant>
+            <grant title="글쓰기" action="write|save|delete|view">
+                <option uncase="param.id" default="allow" />
+                <option case="param.id" query="SELECT id FROM {dbprefix}order WHERE id='{param.id}' AND ismember='{memberid}'" />
+            </grant>
+            <grant title="상태변경" action="change_status" />
+        </grants>
+    </section>
+
+    <section>
+        <title>공지사항</title>
+        <date>2017-08-10</date>
+        <target>order/notice/index</target>
+        <grants>
+            <grant title="메뉴보기" action="index" />
+            <grant title="메뉴관리" action="save_area|add_map|delete_map|add|save|delete|grant|grant_save" />
+        </grants>
+    </section>
+
+</module>

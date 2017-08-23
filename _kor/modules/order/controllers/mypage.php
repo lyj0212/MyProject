@@ -38,15 +38,35 @@ class Mypage extends PL_Controller
      */
     public function index()
     {
-        $this->cache->delete('_module_config_order');
         $this->title = '발주현황 한눈에 보기';
 
         $model = array(
-            'from' => 'order',
+            'from' => 'bbs',
+            'conditions' => array('where' => array('tableid' => 'notice')),
             'order' => array('id' => 'ASC'),
         );
+        $data['notice'] = $this->get_entries($model);
 
-        $data = $this->get_entries($model);
+        $model = array(
+            'select' => 'count(id) as cnt, type',
+            'from' => 'order',
+            'order' => array('id' => 'ASC'),
+            'group' => 'type'
+        );
+        $row = $this->get_entries($model);
+
+        $data['order1'] = 0;
+        $data['order2'] = 0;
+        $data['order3'] = 0;
+
+        foreach ($row['data'] as $item){
+            if($item['type'] == '대기')
+                $data['order1'] = $item['cnt'];
+            else if($item['type'] == '완료')
+                $data['order2'] = $item['cnt'];
+            else if($item['type'] == '취소')
+                $data['order3'] = $item['cnt'];
+        }
 
         $view = array(
             'skin' => '/mypage/index',

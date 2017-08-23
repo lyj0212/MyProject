@@ -1,11 +1,11 @@
 <script type="text/javascript">
 $(function() {
-	<!------ 사업체 구분 스크립트 -------> 
+	//사업체 구분 스크립트 ------->
 	$("#comp_status2").chained("#comp_status1");
 	$("#comp_status3").chained("#comp_status2");
-	<!------ 사업체 구분 스크립트 끝 ------->
+	//사업체 구분 스크립트 끝 ------->
 	
-	<!------ 중복 체크 스크립트 ------->
+	//중복 체크 스크립트 ------->
 	$(document).on('click', '._check', function(e) {
 		e.preventDefault();
 		var target = $(this).data('target');

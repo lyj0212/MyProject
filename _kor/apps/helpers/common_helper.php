@@ -485,6 +485,45 @@ function sha512($s)
     //return base64_encode(hash('sha512', $s, $s));
 }
 
+
+// --------------------------------------------------------------------
+
+/**
+ * Initialize the Controller Preferences
+ *
+ * @access	private
+ * @params array
+ * @return	void
+ */
+function file_get_external_contents($url)
+{
+    if(function_exists('curl_init'))
+    {
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_HEADER, FALSE);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
+        curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.7.5) Gecko/20041107 Firefox/1.0');
+        $content = curl_exec($ch);
+        //$debug = curl_getinfo($ch);
+        curl_close($ch);
+        //debug($debug);
+        //exit;
+    }
+    else if($fp = fopen($url, 'r'))
+    {
+        $content = '';
+        while($line = fread($fp, 1024))
+        {
+            $content .= $line;
+        }
+    }
+
+    return $content;
+}
+
+
 // --------------------------------------------------------------------
 // --------------------------------------------------------------------
 /**

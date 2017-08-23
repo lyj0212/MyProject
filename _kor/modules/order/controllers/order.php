@@ -72,6 +72,12 @@ class Order extends PL_Controller
 
         $data = $this->get_entries($model);
 
+        $model = array(
+            'from' => 'order A',
+        );
+        $row = $this->get_entries($model);
+        $data['total'] = count($row['data']);
+
         $view = array(
             'skin' => '/order/index',
             'data' => $data
@@ -177,7 +183,9 @@ class Order extends PL_Controller
     public function save()
     {
         $this->form_validation->set_rules('title', '제목', 'trim|required');
-        $this->form_validation->set_rules('type', '발주상태', 'trim|required');
+        $this->form_validation->set_rules('company', '고객사명', 'trim|required');
+        $this->form_validation->set_rules('phone2', '두번째 연락처', 'trim|required');
+        $this->form_validation->set_rules('phone3', '세번째 연락처', 'trim|required');
 
         if($this->form_validation->run() === FALSE)
         {
@@ -187,7 +195,11 @@ class Order extends PL_Controller
 
         $id = $this->input->post('id');
         $data['title'] = $this->input->post('title');
-        $data['type'] = $this->input->post('type');
+        $data['company'] = $this->input->post('company');
+        $data['name'] = $this->input->post('name');
+        $data['phone1'] = $this->input->post('phone1');
+        $data['phone2'] = $this->input->post('phone2');
+        $data['phone3'] = $this->input->post('phone3');
         $data['contents'] = $this->input->post('contents');
         $data['contents'] = preg_replace(sprintf("|src=[\"']?%s(.*?)[\"']|i", rtrim(site_url(), '/')), "src=\"$1\"", $data['contents']);
         $data['contents'] = preg_replace(sprintf("|href=[\"']?%s(.*?)[\"']|i", rtrim(site_url(), '/')), "href=\"$1\"", $data['contents']);
@@ -195,7 +207,6 @@ class Order extends PL_Controller
         if(empty($id))
         {
             $data['ismember'] = $this->account->get('id');
-            $data['name'] = $this->account->get('name');
             $data['ip'] = $this->input->ip_address();
         }
 
@@ -213,6 +224,31 @@ class Order extends PL_Controller
 
     }
 
+    // --------------------------------------------------------------------
+
+    /**
+     * Initialize the Controller Preferences
+     *
+     * @access	private
+     * @params array
+     * @return	void
+     */
+    public function order_save()
+    {
+        $id = $this->input->post('id');
+        $data['etc'] = $this->input->post('etc');
+        $data['type'] = $this->input->post('type');
+
+        $model = array(
+            'from' => 'order',
+            'conditions' => array('where'=>array('id'=>$id)),
+            'data' => $data,
+        );
+        $affect_id = $this->save_row($model);
+
+        message('저장 되었습니다.');
+        redirect($this->link->get(array('action'=>'view', 'id'=>$affect_id)));
+    }
     // --------------------------------------------------------------------
 
     /**

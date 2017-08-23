@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* Web Standardization Team, Author:JongWoon,LEE 2017.08.21 */
+
+/*UI Object*/
+html,body{height:100%}
+#wrap{display:block;position:relative;width:100%;height:100%;margin:0 auto}
+
+/*header*/
+#header{display:block;position:fixed;top:0;left:0;width:180px;height:100%;z-index:2}
+#header .head_wrap{display:block;position:relative;height:100%;padding-top:100px;background:#333941;z-index:1}
+#header .head_wrap h1{display:block;position:absolute;top:30px;left:50%;width:120px;height:43px;margin-left:-60px}
+#header .head_wrap h1 a{display:block;width:100%;height:100%;background:url(/images/korean/contents/order/h1_logo.png) no-repeat 50% 50%;background-size:120px auto;font-size:0;line-height:0}
+/*메뉴*/
+#header .gnbwrap,#header #gnavigation{display:block;position:relative}
+/*글로벌메뉴*/
+#header #gnavigation > li.th1{display:block;border-bottom:1px solid #2b3035}
+#header #gnavigation a.th1_lnk{display:block;position:relative;padding:10px 30px;font-size:1em;line-height:1.2667em;color:#7d8796;letter-spacing:-0.044117em}
+#header #gnavigation a.th1_lnk:after{display:block;position:absolute;top:0;left:-5px;width:5px;height:100%;background:#385d8f; content:""}
+#header #gnavigation a.th1_lnk.active,#header #gnavigation a.th1_lnk:hover,#header #gnavigation a.th1_lnk:active,#header #gnavigation a.th1_lnk:focus{background:#2b3035;color:#fff}
+#header #gnavigation a.th1_lnk.active:after,#header #gnavigation a.th1_lnk:hover:after,#header #gnavigation a.th1_lnk:active:after,#header #gnavigation a.th1_lnk:focus:after{left:0}
+#header #gnavigation a.th1_lnk > span{display:block;position:relative;padding-left:25px;line-height:1.2667em}
+#header #gnavigation a.th1_lnk > span:after{display:block;position:absolute;top:0;left:0;font-size:1.133em;line-height:1.11764em;font-family:"Pe-icon-7-stroke"}
+#header #gnavigation .no1 a.th1_lnk > span:after{content:"\e65d"}
+#header #gnavigation .no2 a.th1_lnk > span:after{content:"\e69d"}
+#header #gnavigation .no3 a.th1_lnk > span:after{content:"\e692"}
+#header .util_wrap{display:block;position:fixed;top:0;left:0;width:100%;height:40px;padding:7px 20px;border-bottom:1px solid #ddd;background:#f2f2f2}
+#header .util_wrap:after{clear:both;display:block;content:""}
+#header .util_wrap > p{display:block;float:right}
+#header .util_wrap span,#header .util_wrap a{float:left;position:relative;font-size:0.933em;line-height:1.78571em;letter-spacing:-0.03571em}
+#header .util_wrap span{padding:0 15px 0 20px;color:#333941}
+#header .util_wrap span:after{display:block;position:absolute;top:0;left:0;font-size:1.143em;line-height:1.5625em;font-family:"Pe-icon-7-stroke";content:"\e605"}
+#header .util_wrap a{display:block;padding:4px 15px;background:#333941;font-size:0.867em;line-height:1.307692em;color:#fff}
+
+
+/*body*/
+#body{position:relative;width:100%;margin:0 auto;padding:40px 0 50px 180px}
+/*content*/
+#body #content{display:block;position:relative;max-width:1060px;padding:30px 40px;margin:0 auto}
+/*본문타이틀*/
+#content h1{display:block;font-weight:700;font-size:2.133em;line-height:1.25em;color:#2b3035;letter-spacing:-0.046875em;text-align:center}
+/*path*/
+#content .path_wrap{display:block;position:relative;overflow:hidden;max-width:1160px;height:24px;margin:0 auto 25px;text-align:center}
+.path_wrap > .path{display:inline-block;height:24px}
+.path_wrap > .path > a,.path_wrap > .path > span,.path_wrap > .path > em{display:block;float:left;position:relative;padding:0 7px 0 12px;font-weight:400;font-size:0.933em;line-height:1.714285em;color:#2b3035;letter-spacing:-0.03571em}
+.path_wrap > .path > a:after,.path_wrap > .path > span:after,.path_wrap > .path > em:after{display:block;position:absolute;top:0;left:-7px;font-size:1.286em;line-height:1.333em;font-family:"Pe-icon-7-stroke"}
+.path_wrap > .path > a.home{width:30px;height:24px;padding-left:7px}
+.path_wrap > .path > a.home:after{top:-1px;left:0;width:100%;height:100%;background:#fff;text-align:center;content:"\e648"}
+.path_wrap > .path > span:after,.path_wrap > .path > em:after{content:"\e684"}
+/*본문컨텐츠*/
+#detail_content{display:block;position:relative}
+
+
+/*footer*/
+#footer{display:block;position:fixed;bottom:0;left:0;width:100%;height:50px;background:#fff}
+/*서비스 정보*/
+#footer #siteinfo{display:block;position:relative;padding:7px 0 7px 180px;margin-top:20px;background:#dfdfdf}
+#siteinfo .f_logo{display:none;font-weight:400;line-height:1.333em;color:#7c848f}
+/*footer Address*/
+#siteinfo .addr{display:block;position:relative}
+#siteinfo .copyright{display:block;font-size:0.800em;line-height:1.3333em;font-family:"Open Sans";color:#757575;letter-spacing:-0.03846em;text-align:center}

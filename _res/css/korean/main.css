@@ -1,0 +1,6 @@
+@charset "utf-8";
+/* Web Standardization Team, Author:JongWoon,LEE 2017.08.23 */
+
+/*UI Object*/
+html,body{height:100%}
+#wrap{display:block;position:relative;width:100%;height:100%;margin:0 auto}

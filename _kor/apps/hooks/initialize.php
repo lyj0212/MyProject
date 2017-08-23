@@ -310,35 +310,39 @@ class Initialize {
 		define('SITE', trim(str_replace($base_url, '', site_url()), '/'));
 		$this->CI->config->set_item('base_url', str_replace(SITE, '', site_url()));
 
-		$login_url = '';
-		$login_page = '';
-		$menu = $this->CI->menu->all();
-		foreach($menu as $item)
-		{
-			if(in_array($item['target'], array('member/accounts/index', 'member/accounts/admin_login')) AND $this->CI->link->base['map'] == $item['map'])
-			{
-				$login_url = $item['url'];
-				list($module, $controller, $action) = explode('/', $item['target']);
-				$login_page = $this->CI->link->get(array('map'=>$item['map'], 'prefix'=>$item['url'], 'module'=>'member', 'controller'=>'accounts', 'action'=>$action, 'redirect'=>encode_url()));
-				break;
-			}
-		}
-		$this->CI->menu->login_page = $login_page;
+		if(
+            $this->CI->account->is_logged() == FALSE
+		    AND ($this->CI->link->base['map'] == 'order' OR $this->CI->link->base['map'] == 'webAdmin')
+        )
+        {
+            $login_url = '';
+            $login_page = '';
+            $menu = $this->CI->menu->all();
+            foreach($menu as $item)
+            {
+                if(in_array($item['target'], array('member/accounts/index', 'member/accounts/admin_login')) AND $this->CI->link->base['map'] == $item['map'])
+                {
+                    $login_url = $item['url'];
+                    list($module, $controller, $action) = explode('/', $item['target']);
+                    $login_page = $this->CI->link->get(array('map'=>$item['map'], 'prefix'=>$item['url'], 'module'=>'member', 'controller'=>'accounts', 'action'=>$action, 'redirect'=>encode_url()));
+                    $this->CI->menu->login_page = $login_page;
+                    break;
+                }
+            }
+            $this->CI->menu->login_page = $login_page;
 
-		if(($this->CI->menu->current['isadmin'] == 'Y' AND $this->CI->account->is_logged() == FALSE))
-		{
-			if( ! empty($login_page))
-			{
-				if($this->CI->menu->current['url'] != $login_url)
-				{
-					redirect($login_page);
-				}
-			}
-			else
-			{
-				script('ment', '로그인 페이지가 설정되지 않았습니다.', NULL, TRUE);
-			}
-		}
+            if( ! empty($login_page))
+            {
+                if($this->CI->menu->current['url'] != $login_url)
+                {
+                    redirect($login_page);
+                }
+            }
+            else
+            {
+                script('ment', '로그인 페이지가 설정되지 않았습니다.', NULL, TRUE);
+            }
+        }
 		else 
 		{
 			if($this->CI->menu->current['isadmin'] == 'Y' AND $this->CI->account->get('admin') != 'Y')

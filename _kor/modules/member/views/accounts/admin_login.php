@@ -2,7 +2,7 @@
 <html lang="ko" class="login-bg">
 <head>
 	<meta charset="UTF-8">
-	<title><?php echo $this->menu->current['title']; ?> &#124; D-CUBE(D3) 클러스터 플랫폼 Admin</title>
+	<title><?php echo $this->menu->current['title']; ?> &#124; 현대 SDI Admin</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="description" content="Y-Bridge" />
@@ -24,7 +24,7 @@
 <body>
 
 <div class="container-fluid login-wrapper">
-	<a class="brand" href="/<?php echo $this->menu->current['map']; ?>">D-CUBE(D3) 클러스터 플랫폼 ADMIN</a>
+	<a class="brand" href="/<?php echo $this->menu->current['map']; ?>">현대 SDI ADMIN</a>
 
 	<div class="box">
 		<div class="content-wrap">

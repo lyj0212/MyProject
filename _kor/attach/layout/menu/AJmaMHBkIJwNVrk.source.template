@@ -1,0 +1,7 @@
+<?php /* Template_ 2.2.7 2017/08/21 09:55:52 E:\phpWork\sdi_git\_kor\attach\layout\menu\AJmaMHBkIJwNVrk.source 000000596 */ 
+$TPL_LOOP_1=empty($TPL_VAR["LOOP"])||!is_array($TPL_VAR["LOOP"])?0:count($TPL_VAR["LOOP"]);?>
+<ul class="submenu<?php if($TPL_VAR["ACTIVE"]){?> active<?php }?>">
+<?php if($TPL_LOOP_1){foreach($TPL_VAR["LOOP"] as $TPL_V1){?>
+	<li><a href="<?php echo $TPL_V1["LINK"]?>"<?php if($TPL_V1["ACTIVE"]){?> class="active" <?php }?><?php if($TPL_V1["WIN_TARGET"]){?> target="<?php echo $TPL_V1["WIN_TARGET"]?>"<?php }?>><?php echo $TPL_V1["TITLE"]?></a></li>
+<?php }}?>
+</ul>

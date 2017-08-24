@@ -1,0 +1,9 @@
+<?php /* Template_ 2.2.7 2017/08/23 13:50:34 E:\phpWork\sdi_git\_kor\attach\layout\menu\IzAQkLgyuMikQKk.source 000000717 */ 
+$TPL_LOOP_1=empty($TPL_VAR["LOOP"])||!is_array($TPL_VAR["LOOP"])?0:count($TPL_VAR["LOOP"]);?>
+<?php if($TPL_LOOP_1){foreach($TPL_VAR["LOOP"] as $TPL_V1){?>
+<li class="no1 th1">
+  <a class="th1_lnk <?php if($TPL_V1["ACTIVE"]){?>active<?php }?>" href="<?php echo $TPL_V1["LINK"]?>"<?php if($TPL_V1["SUB_ENTRIES"]){?> <?php }?><?php if($TPL_V1["WIN_TARGET"]){?> target="<?php echo $TPL_V1["WIN_TARGET"]?>"<?php }?>><?php if($TPL_V1["ACTIVE"]){?><?php }?><?php echo $TPL_V1["TITLE"]?><?php if($TPL_V1["SUB_ENTRIES"]){?><?php }?></a>
+  <?php echo $TPL_V1["SUB_ENTRIES"]?>
+
+</li>
+<?php }}?>

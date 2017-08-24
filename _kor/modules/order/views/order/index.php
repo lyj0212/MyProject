@@ -11,12 +11,22 @@
 					<div class="searchfrm">
 						<div class="select_wrap">
 							<div class="select_box">
+								<label for="type">발주상태</label>
+								<select class="info_select" id="type" name="search_type">
+									<option value="">구분 선택</option>
+									<option value="대기" <?php echo set_select('search_type', '대기', (get_field('search_type')=='대기')); ?>>대기</option>
+									<option value="완료" <?php echo set_select('search_type', '완료', (get_field('search_type')=='완료')); ?>>완료</option>
+									<option value="취소" <?php echo set_select('search_type', '취소', (get_field('search_type')=='취소')); ?>>취소</option>
+								</select>
+							</div>
+						</div>
+						<div class="select_wrap">
+							<div class="select_box">
 								<label for="search_field3">구분 선택</label>
 								<select class="info_select" id="search_field3" name="search_field">
 									<option value="">구분 선택</option>
 									<option value="title" <?php echo set_select('search_field', 'title', (get_field('search_field')=='title')); ?>>제목</option>
 									<option value="contents" <?php echo set_select('search_field', 'contents', (get_field('search_field')=='contents')); ?>>내용</option>
-									<option value="type" <?php echo set_select('search_field', 'type', (get_field('search_field')=='type')); ?>>발주상태</option>
 									<option value="etc" <?php echo set_select('search_field', 'etc', (get_field('search_field')=='etc')); ?>>비고</option>
 								</select>
 							</div>

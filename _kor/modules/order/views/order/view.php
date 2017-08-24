@@ -33,7 +33,6 @@
 		<tbody>
 		<tr>
 			<td class="tbl_cnts">
-          <?php echo $data['contents']; ?>
           <?php echo nl2br($data['contents']); ?>
 			</td>
 		</tr>
@@ -57,10 +56,10 @@
 
 	<div class="table_footer">
 		<p class="btn_wrap ft_right">
-        <?php if($this->auth->check(array('action'=>'write')) == TRUE) : ?>
+        <?php if($this->auth->check(array('action'=>'write')) == TRUE && $data['type'] !='완료') : ?>
 					<a href="<?php echo $this->link->get(array('action'=>'write')); ?>" class="btn">수정</a>
         <?php endif; ?>
-        <?php if($this->auth->check(array('action'=>'delete')) == TRUE) : ?>
+        <?php if($this->auth->check(array('action'=>'delete')) == TRUE && $data['type'] !='완료') : ?>
 					<a href="<?php echo $this->link->get(array('action'=>'delete')); ?>" onclick="return confirm('삭제 하시겠습니까?');" class="btn">삭제</a>
         <?php endif; ?>
 			<a href="<?php echo $this->link->get(array('action'=>'index', 'id'=>NULL)); ?>" class="btn">목록</a>
@@ -106,7 +105,7 @@
 		</table>
 		<div class="table_footer">
 			<p class="btn_wrap btn_regist">
-				<button type="submit" class="btn btn-primary"><span><i class="pe-7s-check" aria-hidden="true"></i>발주신청</span></button>
+				<button type="submit" class="btn btn-primary"><span><i class="pe-7s-check" aria-hidden="true"></i>상태수정</span></button>
 			</p>
 		</div>
 		</form>

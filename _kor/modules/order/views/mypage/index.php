@@ -30,7 +30,7 @@
 			<h2>공지사항</h2>
 			<ul>
 				<?php foreach ($notice['data'] as $item) : ?>
-					<li><a href="<?php echo $this->link->get(array('controller' => 'order', 'action'=>'view', 'id'=>$item['id'])); ?>"><?php echo $item['subject']; ?></a><span class="date">[<?php echo date('Y-m-d', strtotime($item['created'])); ?>]</span></li>
+					<li><a href="<?php echo $this->link->get(array('module' => 'order_notice', 'controller' => 'bbs', 'action'=>'view', 'id'=>$item['id'], 'tableid' => 'notice')); ?>"><?php echo $item['subject']; ?></a><span class="date">[<?php echo date('Y-m-d', strtotime($item['created'])); ?>]</span></li>
 				<?php endforeach;?>
 			</ul>
 		</div>

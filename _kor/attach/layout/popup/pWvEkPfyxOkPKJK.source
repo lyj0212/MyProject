@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>슈가레인</title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+
+<link rel="stylesheet" href="/_res/libs/bootstrap/css/bootstrap.min.css?popup&v=20130306">
+<link rel="stylesheet" href="/_res/css/theme.css?popup">
+<link rel="stylesheet" href="/_res/css/iSmartCode.css?popup">
+<link rel="stylesheet" href="/_res/css/project.css?popup">
+<link rel="stylesheet" href="/_res/css/font_notosans.css" />
+<link rel="stylesheet" href="/common/css/popup.css?popup">
+<link rel="stylesheet" href="/_res/css/docs_cmpt.css" />  
+<link rel="stylesheet" href="/_res/css/docs_icons.css" />
+<link sizes="144x144" rel="apple-touch-icon-precomposed" href="/images/social/ico/apple-touch-icon-144-precomposed.png" />
+<link sizes="72x72" rel="apple-touch-icon-precomposed" href="/images/social/ico/apple-touch-icon-72-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" href="/images/social/ico/apple-touch-icon-57-precomposed.png" />
+<link rel="shortcut icon" href="/images/social/ico/favicon.png" />
+<style>
+html, body { height:auto !important; min-height:0 !important; background-color:transparent !important; }
+</style>
+</head>
+
+<body>
+
+<div class="modalPopup_wrap clearfix">
+	<h1 class="hide"><?php echo $this->title; ?></h1>
+	<div class="modal-content">
+		<div class="title_area clearfix">
+			<h2 class="modal-title"><?php echo $this->title; ?></h2>
+		</div>
+		<div class="modal-body">
+		<?php echo $content_for_layout; ?>
+		</div>
+		<button type="button" class="close_modal" data-dismiss="modal" aria-label="Close"><span class="glyphiconEtc modal_close">닫기</span></button>
+		<p class="print">
+			<a href="" onclick="window.print(); return false;"><img src="/images/btn/btn_print.gif" alt="인쇄하기" /></a>
+		</p>
+	</div>
+</div>
+
+</body>
+</html>

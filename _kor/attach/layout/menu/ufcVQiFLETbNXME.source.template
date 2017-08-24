@@ -1,0 +1,11 @@
+<?php /* Template_ 2.2.7 2017/08/21 09:55:52 E:\phpWork\sdi_git\_kor\attach\layout\menu\ufcVQiFLETbNXME.source 000000897 */ 
+$TPL_LOOP_1=empty($TPL_VAR["LOOP"])||!is_array($TPL_VAR["LOOP"])?0:count($TPL_VAR["LOOP"]);?>
+<ul id="dashboard-menu">
+<?php if($TPL_LOOP_1){foreach($TPL_VAR["LOOP"] as $TPL_V1){?>
+	<li<?php if($TPL_V1["ACTIVE"]){?> class="active"<?php }?>>
+		<a href="<?php echo $TPL_V1["LINK"]?>"<?php if($TPL_V1["SUB_ENTRIES"]){?> class="dropdown-toggle" <?php }?><?php if($TPL_V1["WIN_TARGET"]){?> target="<?php echo $TPL_V1["WIN_TARGET"]?>"<?php }?>><?php if($TPL_V1["ACTIVE"]){?><div class="pointer"><div class="arrow"></div><div class="arrow_border"></div></div><?php }?><span><?php echo $TPL_V1["TITLE"]?></span><?php if($TPL_V1["SUB_ENTRIES"]){?><i class="glyphicon glyphicon-chevron-down"></i><?php }?></a>
+		<?php echo $TPL_V1["SUB_ENTRIES"]?>
+
+	</li>
+<?php }}?>
+</ul>

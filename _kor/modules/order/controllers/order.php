@@ -65,9 +65,9 @@ class Order extends PL_Controller
             'include_search' => TRUE,
             'callback' => '_process_entries'
         );
-        if(get_field('type'))
+        if(get_field('search_type'))
         {
-            $model['conditions']['where']['A.type'] = get_field('type');
+            $model['conditions']['where']['A.type'] = get_field('search_type');
         }
 
         $data = $this->get_entries($model);

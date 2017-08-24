@@ -43,13 +43,15 @@ class Mypage extends PL_Controller
         $model = array(
             'from' => 'bbs',
             'conditions' => array('where' => array('tableid' => 'notice')),
-            'order' => array('id' => 'ASC'),
+            'order' => array('id' => 'DESC'),
+            'limit' => 5
         );
         $data['notice'] = $this->get_entries($model);
 
         $model = array(
             'select' => 'count(id) as cnt, type',
             'from' => 'order',
+            'conditions' => array('where' => array('ismember' => $this->account->get('id'))),
             'order' => array('id' => 'ASC'),
             'group' => 'type'
         );

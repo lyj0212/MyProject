@@ -30,9 +30,9 @@
 						</select>
 					</div>
 					<span class="phone_addon">-</span>
-					<input type="text" class="center" id="mobile1_2" name="phone2" value="<?php echo set_value('phone2', $data['phone2']); ?>" title="휴대폰 둘째자리 입력" />
+					<input type="text" class="center" id="mobile1_2" name="phone2" value="<?php echo set_value('phone2', $data['phone2']); ?>" title="휴대폰 둘째자리 입력" maxlength="4"/>
 					<span class="phone_addon">-</span>
-					<input type="text" class="center" id="phone3" name="phone3" value="<?php echo set_value('phone3', $data['phone3']); ?>" title="휴대폰 마지막자리 입력" />
+					<input type="text" class="center" id="phone3" name="phone3" value="<?php echo set_value('phone3', $data['phone3']); ?>" title="휴대폰 마지막자리 입력" maxlength="4" />
 				</div>
 			</td>
 		</tr>

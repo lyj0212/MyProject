@@ -8,7 +8,7 @@
 				<input type="hidden" name="redirect" value="<?php echo $this->link->get(array('action'=>'index', 'page'=>NULL, 'category'=>NULL, 'highlight'=>NULL, 'search_field'=>NULL, 'search_keyword'=>NULL)); ?>" />
 				<fieldset>
 					<legend>게시물검색 폼</legend>
-					<div class="searchfrm">
+					<div class="searchfrm" style="padding-left: 260px;">
 						<div class="select_wrap">
 							<div class="select_box">
 								<label for="type">발주상태</label>
@@ -20,7 +20,7 @@
 								</select>
 							</div>
 						</div>
-						<div class="select_wrap">
+						<div class="select_wrap" style="left: 130px;">
 							<div class="select_box">
 								<label for="search_field3">구분 선택</label>
 								<select class="info_select" id="search_field3" name="search_field">

@@ -138,7 +138,6 @@ $(".findPwd_submit").click(function() {
 
 	//카카오톡 로그인
 	$('#kakaoBtn').on('click', function(e) {
-		alert('s');
 		Kakao.init('3c91a56849f213462ceec9b570ebbaa7');
 		e.preventDefault();
 		Kakao.Auth.login({
@@ -161,18 +160,24 @@ $(".findPwd_submit").click(function() {
 		});
 	});
 
+/*var naver_id_login = new naver_id_login("4vwO3QhQHBYqdealrSiI", "http://sdi.localhost/order/order_login/accounts/naver_return");
+var state = naver_id_login.getUniqState();
+naver_id_login.setButton("white", 2,40);
+naver_id_login.setDomain("YOUR_SERVICE_URL");
+naver_id_login.setState(state);
+naver_id_login.setPopup();
+naver_id_login.init_naver_id_login();*/
+
+var naver_id_login = new naver_id_login("4vwO3QhQHBYqdealrSiI", "http://sdi.localhost/order/order_login/accounts/naver_return");
+naver_id_login.init_naver_id_login();
 	//네이버 로그인
-	/*$('#naverBtn').on('click', function(e) {
+	$('#naverBtn').on('click', function(e) {
 
-		var naver_id_login = new naver_id_login("4vwO3QhQHBYqdealrSiI", "http://sdi.localhost");
-		var state = naver_id_login.getUniqState();
-		naver_id_login.setButton("white", 2,40);
-		naver_id_login.setDomain("YOUR_SERVICE_URL");
-		naver_id_login.setState(state);
-		naver_id_login.setPopup();
-		naver_id_login.init_naver_id_login();
 
-	}*/
+
+
+
+	});
 
 
 

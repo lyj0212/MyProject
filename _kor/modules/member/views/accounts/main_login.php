@@ -2,6 +2,7 @@
 <script type="text/javascript" src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js" charset="utf-8"></script>
 
 
+
 <!-- 로그인폼 -->
 <div class="memberForm_wrap">
 	<h2 class="hide">로그인</h2>
@@ -47,6 +48,7 @@
 		<a class="btn" href="#"><span class="gg" id="googleBtn">구글</span></a>
 		<a class="btn" href="#"><span class="fb" id="facebookBtn">페이스북</span></a>
 		<a class="btn" href="#"><span class="nv" id="naverBtn">네이버</span></a>
+		<div id="naver_id_login"></div>
 	</p>
 </div>
 <!-- //로그인폼 -->

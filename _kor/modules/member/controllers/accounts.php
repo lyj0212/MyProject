@@ -868,6 +868,26 @@ class Accounts extends PL_Controller {
      * @params array
      * @return  void
      */
+    public function naver_return()
+    {
+
+        $view = array(
+            'skin' => 'accounts/naver_return',
+           // 'data' => $data
+        );
+        $this->show($view);
+
+    }
+
+    // --------------------------------------------------------------------
+
+    /**
+     * Initialize the Controller Preferences
+     *
+     * @access  private
+     * @params array
+     * @return  void
+     */
     private function _check_activation($member_id, $first=FALSE)
     {
         $model = array(

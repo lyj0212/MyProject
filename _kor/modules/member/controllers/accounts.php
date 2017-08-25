@@ -88,8 +88,7 @@ class Accounts extends PL_Controller {
             echo "<a class=\"button\" href=\"$loginUrl\">Sign in with Instagram</a>";
         }*/
 
-
-        //$data['login_url'] = $login_url;
+        $this->html['js'][] = '/_res/js/naverLogin_implicit-1.0.3.js';
         $view = array(
             'skin' => 'accounts/main_login',
             'data' => $data

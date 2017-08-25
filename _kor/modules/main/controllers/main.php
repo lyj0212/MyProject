@@ -240,6 +240,10 @@ class Main extends PL_Controller {
 		$data['board'] = $this->get_entries($model);
 
 
+        $this->html['js'][] = '/_res/js/script_main.js';
+        $this->html['js'][] = '/_res/js/jquery.fullPage.min.js';
+        $this->html['css'][] = '/_res/js/jquery.fullPage.css';
+
 		$view = array(
 			'skin' => 'main/korean',
 			'data' => $data

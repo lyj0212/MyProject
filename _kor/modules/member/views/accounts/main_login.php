@@ -1,5 +1,4 @@
 <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
-<script type="text/javascript" src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js" charset="utf-8"></script>
 
 
 
@@ -47,8 +46,7 @@
 		<a class="btn" href="#"><span class="in" id="instaBtn">인스타그램</span></a>
 		<a class="btn" href="#"><span class="gg" id="googleBtn">구글</span></a>
 		<a class="btn" href="#"><span class="fb" id="facebookBtn">페이스북</span></a>
-		<a class="btn" href="#"><span class="nv" id="naverBtn">네이버</span></a>
-		<div id="naver_id_login"></div>
+		<a class="btn" href="#"><span class="nv" id="naver_id_login">네이버</span></a>
 	</p>
 </div>
 <!-- //로그인폼 -->

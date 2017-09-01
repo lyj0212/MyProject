@@ -87,7 +87,13 @@
 	</div>
 
 	<div class="table_footer">
-		<p class="btn_wrap btn_regist">
-			<a href="<?php echo $this->link->get(array('action'=>'write', 'id'=>NULL)); ?>" class="btn btn-primary"><span><i class="pe-7s-check" aria-hidden="true"></i>발주신청</span></a>
+		<p class="btn_wrap ft_right">
+			<a href="<?php echo $this->link->get(array('action'=>'write', 'id'=>NULL)); ?>" class="btn btn-primary">글쓰기</a>
 		</p>
 	</div>
+	<!--
+	<div class="table_footer">
+		<p class="btn_wrap btn_regist">
+			<a href="<?php /*echo $this->link->get(array('action'=>'write', 'id'=>NULL)); */?>" class="btn btn-primary"><span><i class="pe-7s-check" aria-hidden="true"></i>발주신청</span></a>
+		</p>
+	</div>-->

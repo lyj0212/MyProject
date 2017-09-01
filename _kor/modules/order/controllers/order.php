@@ -108,6 +108,22 @@ class Order extends PL_Controller
         );
         $data = $this->get_row($model);
 
+        $model = array(
+            'from' => 'global_category',
+            'conditions' => array('where' => array('type' => 'light')),
+            'hasmany' => array(
+                array(
+                    'match' => 'category',
+                    'from' => 'order_category A',
+                    'conditions' => array('where' => array('A.order_id' => $id)),
+                    'return' => 'light_data'
+                )
+            ),
+            'order' => array('sort' => 'ASC'),
+            'callback' => '_process_category'
+        );
+        $data['light_list'] = $this->get_entries($model);
+
         $hit = $this->session->userdata('hit');
         if(empty($hit))
         {
@@ -157,12 +173,37 @@ class Order extends PL_Controller
                 'not_exists' => '_error_exists'
             );
             $data = $this->get_row($model);
+
+
+            $data['light_list'] =$this->_itemlist('light', $id);
+            $data['switch_list'] =$this->_itemlist('switch', $id);
+            $data['switchetc_list'] =$this->_itemlist('switchetc', $id);
+            $data['socket_list'] =$this->_itemlist('socket', $id);
+            $data['sensor_list'] =$this->_itemlist('sensor', $id);
+            $data['videophone_list'] =$this->_itemlist('videophone', $id);
+            $data['doorlock_list'] =$this->_itemlist('doorlock', $id);
+
         }
         else
         {
             $data = $this->set_default('order');
-        }
 
+            $data['light_list'] = $this->_category('light');
+            $data['light_list']['order_data'] = $this->set_default('order_category');
+            $data['switch_list'] = $this->_category('switch');
+            $data['switch_list']['order_data'] = $this->set_default('order_category');
+            $data['switchetc_list'] = $this->_category('switchetc');
+            $data['switchetc_list']['order_data'] = $this->set_default('order_category');
+            $data['socket_list'] = $this->_category('socket');
+            $data['socket_list']['order_data'] = $this->set_default('order_category');
+            $data['sensor_list'] = $this->_category('sensor');
+            $data['sensor_list']['order_data'] = $this->set_default('order_category');
+            $data['videophone_list'] = $this->_category('videophone');
+            $data['videophone_list']['order_data'] = $this->set_default('order_category');
+            $data['doorlock_list'] = $this->_category('doorlock');
+            $data['doorlock_list']['order_data'] = $this->set_default('order_category');
+
+        }
         $view = array(
             'skin' => '/order/write',
             'data' => $data
@@ -203,6 +244,10 @@ class Order extends PL_Controller
         $data['contents'] = $this->input->post('contents');
         $data['contents'] = preg_replace(sprintf("|src=[\"']?%s(.*?)[\"']|i", rtrim(site_url(), '/')), "src=\"$1\"", $data['contents']);
         $data['contents'] = preg_replace(sprintf("|href=[\"']?%s(.*?)[\"']|i", rtrim(site_url(), '/')), "href=\"$1\"", $data['contents']);
+        $data['delivery_area'] = $this->input->post('delivery_area');
+        $data['delivery_date'] = $this->input->post('delivery_date');
+        $data['build_date'] = $this->input->post('build_date');
+        $data['message'] = $this->input->post('message');
 
         if(empty($id))
         {
@@ -218,6 +263,48 @@ class Order extends PL_Controller
             'update_readed' => TRUE
         );
         $affect_id = $this->save_row($model);
+
+
+        //조명 입력
+        $model = array(
+            'from' => 'global_category',
+            'conditions' => array('where' => array('type' => 'light')),
+            'order' => array('sort' => 'ASC'),
+            'callback' => '_process_category'
+        );
+        $light_list = $this->get_entries($model);
+
+        foreach ($light_list['data'] as $item){
+            if($this->input->post('title_'.$item['id']) != ''){
+                $coid = $this->input->post('coid_'.$item['id']);
+                $datas['title'] = $this->input->post('title_'.$item['id']);
+                $datas['cnt'] = $this->input->post('cnt_'.$item['id']);
+                $datas['color'] = $this->input->post('color_'.$item['id']);
+                $datas['lamp'] = $this->input->post('lamp_'.$item['id']);
+
+                $model = array(
+                    'from' => 'order_category',
+                    'conditions' => array('where' => array('id' => $coid)),
+                    'data' => $datas
+                );
+                if(empty($coid)){
+                    $datas['order_id'] = $affect_id;
+                    $datas['category'] = $item['id'];
+                    $model = array(
+                        'from' => 'order_category',
+                        'data' => $datas
+                    );
+                }else{
+                    $model = array(
+                        'from' => 'order_category',
+                        'conditions' => array('where' => array('id' => $coid)),
+                        'data' => $datas
+                    );
+                }
+                $this->save_row($model);
+            }
+        }
+
 
         message('저장 되었습니다.');
         redirect($this->link->get(array('action'=>'view', 'id'=>$affect_id)));
@@ -309,6 +396,57 @@ class Order extends PL_Controller
 
         echo 'ok';
     }
+
+    // --------------------------------------------------------------------
+
+    /**
+     * Initialize the Controller Preferences
+     *
+     * @access	private
+     * @params array
+     * @return	void
+     */
+
+    protected function _itemlist($type, $id)
+    {
+        $model = array(
+            'from' => 'global_category',
+            'conditions' => array('where' => array('type' => $type)),
+            'hasmany' => array(
+                array(
+                    'match' => 'category',
+                    'from' => 'order_category A',
+                    'conditions' => array('where' => array('A.order_id' => $id)),
+                    'return' => 'order_data'
+                )
+            ),
+            'order' => array('sort' => 'ASC'),
+            'callback' => '_process_category'
+        );
+        return $this->get_entries($model);
+    }
+
+    // --------------------------------------------------------------------
+
+    /**
+     * Initialize the Controller Preferences
+     *
+     * @access	private
+     * @params array
+     * @return	void
+     */
+
+    protected function _category($type)
+    {
+        $model = array(
+            'from' => 'global_category',
+            'conditions' => array('where' => array('type' => $type)),
+            'order' => array('sort' => 'ASC'),
+            'callback' => '_process_category'
+        );
+        return $this->get_entries($model);
+    }
+
 
 
     // --------------------------------------------------------------------

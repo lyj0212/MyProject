@@ -3,7 +3,7 @@
 	<table class="bbs_table viewType"><!-- 뷰형식의 테이블일 때 "viewType"추가 -->
 		<caption>게시물 뷰 - 번호, 제목, 등록일, 조회수로 나뉘어 설명</caption>
 		<colgroup><col /></colgroup>
-		<thead>
+		<tbody>
 		<tr>
 			<td scope="row" class="subject">
 				<strong><?php echo $data['title']; ?></strong>
@@ -13,29 +13,70 @@
 			<td scope="row" class="tblcnts_info">
 				<div class="tblcnts_info_wrap">
 					<dl>
-						<dt>고객사</dt>
+						<dt>업체명</dt>
 						<dd><?php echo $data['company']; ?></dd>
-						<dt>담당자</dt>
-						<dd><?php echo $data['name']; ?></dd>
-						<dt>연락처</dt>
-						<dd><?php echo $data['phone1']; ?>.<?php echo $data['phone2']; ?>.<?php echo $data['phone3']; ?></dd>
 					</dl>
 					<dl>
-						<dt>작성일</dt>
-						<dd><?php echo $data['created']; ?></dd>
-						<dt>조회수</dt>
-						<dd><?php echo $data['hit']; ?></dd>
+						<dt>담당자</dt>
+						<dd><?php echo $data['name']; ?></dd>
+						<dt>담당자 연락처</dt>
+						<dd><?php echo $data['phone1']; ?>.<?php echo $data['phone2']; ?>.<?php echo $data['phone3']; ?></dd>
 					</dl>
 				</div>
 			</td>
 		</tr>
-		</thead>
-		<tbody>
 		<tr>
-			<td class="tbl_cnts">
-          <?php echo nl2br($data['contents']); ?>
+			<td scope="row" class="tblcnts_info">
+				<div class="tblcnts_info_wrap">
+					<dl>
+						<dt>배송지</dt>
+						<dd><?php echo $data['delivery_area']; ?></dd>
+					</dl>
+					<dl>
+						<dt>배송요청일</dt>
+						<dd><?php echo $data['delivery_date']; ?></dd>
+						<dt>시공일</dt>
+						<dd><?php echo $data['build_date']; ?></dd>
+					</dl>
+				</div>
 			</td>
 		</tr>
+		<tr>
+			<td scope="row" class="tblcnts_info">
+				<div class="tblcnts_info_wrap">
+					<dl>
+						<dt>전달사항</dt>
+						<dd><?php echo $data['message']; ?></dd>
+					</dl>
+				</div>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+	<br />
+	<table class="bbs_table viewType">
+		<caption>조명 내역 입력</caption>
+		<colgroup><col style="width:145px" /><col /><col style="width:125px" /><col style="width:145px"/><col style="width:145px"/></colgroup>
+		<tbody>
+		<tr>
+			<th scope="row"><label for="detail_cnts">공간/용도</label></th>
+			<th scope="row">품명</th>
+			<th scope="row" style="text-align: center; padding-left: 0px;">수량</th>
+			<th scope="row" style="text-align: center; padding-left: 0px;">조명색</th>
+			<th scope="row" style="text-align: center; padding-left: 0px;">램프</th>
+		</tr>
+      <?php foreach ($light_list['data'] as $item) : ?>
+				<tr>
+					<input type="hidden" name="coid_<?php echo $item['id']; ?>" value="<?php echo set_value('coid', empty( $light_list['light_data'][$item['id']][0]['id']) ? '': $light_list['light_data'][$item['id']][0]['id'] ); ?>"/>
+					<td><?php echo $item['title']; ?></td>
+					<td><?php echo empty( $light_list['light_data'][$item['id']][0]['title']) ? '': $light_list['light_data'][$item['id']][0]['title'] ?></td>
+					<td><?php echo empty( $light_list['light_data'][$item['id']][0]['cnt']) ? '': $light_list['light_data'][$item['id']][0]['cnt'] ?></td>
+					<td><?php echo empty( $light_list['light_data'][$item['id']][0]['color']) ? '': $light_list['light_data'][$item['id']][0]['color'] ?></td>
+					<td><?php echo empty( $light_list['light_data'][$item['id']][0]['lamp']) ? '': $light_list['light_data'][$item['id']][0]['lamp'] ?></td>
+				</tr>
+      <?php endforeach; ?>
+		</tbody>
+	</table>
     <?php if( ! empty($files[$data['id']])) : ?>
 		<tr>
 			<td class="attachment">
